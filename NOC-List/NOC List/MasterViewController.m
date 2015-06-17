@@ -27,20 +27,27 @@
 {
     [super viewDidLoad];
     
+    
+    
     //
     // 3. Set the title of the view to "NOC List"
     //
     
     
+    
     //
     // 4. Initialize the agents array as an NSMutableArray
     //
-    self.agents = nil;
-
+    
+    agents = [[NSMutableArray alloc] init];
+    [self loadAgents];
+    
+    
     //
     // 5. Call the method loadNocList so the tableview will actually have objects to load into its cells.
     //
     
+    -(void)loadNOC
     
 }
 
@@ -55,6 +62,13 @@
     // 6. Once we have an array of dictionaries, we need to iterate over them and convert them into Agent objects.
     //
     //    Type in "forin" below. It should offer code completion for a for-in loop. Just hit enter to accept it.
+    
+    for (NSDictionary *aDict in NOCJSON)
+    {
+        AgentName *anItem = [AgentName agentNameWithDictionary:aDict];
+        [agens addObject:anItem];
+    }
+    
     //    Use the "agents" array from above as the array to iterate over. Create an NSDictionary object on the left side
     //    of the for-in loop. You will use this inside the for loop to create an Agent object.
 
@@ -79,7 +93,7 @@
     //
     // 8. We need to set the segue identifier to the same one we used in the segue on the storyboard
     //
-    if ([[segue identifier] isEqualToString:@""])
+    if ([[segue identifier] isEqualToString:@"AgentNameDetailSegue"])
     {
         //
         // 9. We need to get an NSIndexPath for the selected cell

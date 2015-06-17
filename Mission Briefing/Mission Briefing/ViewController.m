@@ -10,10 +10,10 @@
 
 @interface ViewController ()
 
-@property (strong, nonatomic) IBOutlet UITextField *agentNameTextField;
-@property (strong, nonatomic) IBOutlet UITextField *agentPasswordTextField;
-@property (strong, nonatomic) IBOutlet UILabel *greetingLabel;
-@property (strong, nonatomic) IBOutlet UITextView *missionBriefingTextView;
+@property (weak, nonatomic) IBOutlet UITextField *agentNameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *agentPasswordTextField;
+@property (weak, nonatomic) IBOutlet UILabel *greetingLabel;
+@property (weak, nonatomic) IBOutlet UITextView *missionBriefingTextView;
 
 - (IBAction)authenticateAgent:(UIButton *)sender;
 
@@ -24,19 +24,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.agentNameTextField.text = @"";
-    self.agentPasswordTextField.text = @"";
-
     
-
     //
     // 1. These three UI elements need to be emptied on launch
     //    Hint: there is a string literal that represents empty
     //
     
-//    [self.agentNameTextField setText:];
-//    self.greetingLabel.text = ;
-//    self.missionBriefingTextView.text = ;
+    [self.agentNameTextField setText: @""];
+    self.greetingLabel.text = @"" ;
+    self.missionBriefingTextView.text = @"" ;
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,9 +52,9 @@
     //
     // 2. Check whether there is text in BOTH the name and password textfields
     //
-    if ([(![self.agentNameTextField.text isEqualToString:@""] && ![self.agentPasswordTextField.text isEqualToString:@""] )
+    if (![self.agentNameTextField.text isEqualToString:@""] && ![self.agentPasswordTextField.text isEqualToString:@""])
          
-    
+    {
         //
         // 3. The greetingLabel needs to be populated with the the string "Good evening, Agent #", where # is the last name of
         //    the agent logging in. The agent's full name is listed in the text field, but you need to pull out just the last
@@ -70,10 +66,10 @@
         
         NSString *agentName = self.agentNameTextField.text;
         NSArray *nameComponents = [agentName componentsSeparatedByString:@" "];
-         
+        self.greetingLabel.text = [NSString stringWithFormat:@"Good Evening, Agent %@", nameComponents[1]];
+    
     
         // Additional step(s) to remove only the last name
-        self.greetingLabel.text = [NSString stringWithFormat:@"Good evening, Agent %@", nameComponents[1]];
         
         //
         // 4. The mission briefing textview needs to be populated with the briefing from HQ, but it must also include the last
@@ -84,7 +80,7 @@
         //    Set the textview text property to the paragraph in "MissionBriefing.txt"
         //
         
-        self.missionBriefingTextView.text = @"";
+        self.missionBriefingTextView.text = [NSString stringWithFormat: @"This mission will be an arduous one, fraught with peril. You will cover much strange and unfamiliar territory. Should you choose to accept this mission, Agent %@, you will certainly be disavowed, but you will be doing your country a great service. This message will self destruct in 5 seconds.", nameComponents [1]];
         
         //
         // 5. The view's background color needs to switch to green to indicate a successful login by the agent.
@@ -96,8 +92,9 @@
         //    Once you have the color object, you should be able to set the view's background color to this object.
         //
         
-        UIColor *authenticatedBackgroundColor = nil;
+        UIColor *authenticatedBackgroundColor = [UIColor colorWithRed:0.585 green:0.78 blue:0.188 alpha:1.0];
         // Additional step to set the above color object to self.view's background color
+    self.view.backgroundColor = authenticatedBackgroundColor;
     }
     else
     {
@@ -110,8 +107,9 @@
         //
         //    Once you have the color object, you should be able to set the view's background color to this object.
         //
-        UIColor *accessDeniedBackgroundColor = nil;
+        UIColor *accessDeniedBackgroundColor = [UIColor colorWithRed:0.78 green:0.188 blue:0.188 alpha:1.0];
         // Additional step to set the above color object to self.view's background color
+        self.view.backgroundColor = accessDeniedBackgroundColor;
     }
 }
 
