@@ -37,7 +37,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="W3B-I5-X4q" kind="show" id="mwZ-Zt-CHq"/>
+                                    <segue destination="W3B-I5-X4q" kind="show" identifier="AgentNameDetailSegue" id="mwZ-Zt-CHq"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -65,12 +65,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agent's Cover Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQe-Ho-51E">
-                                <rect key="frame" x="16" y="72" width="159" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agent's Real Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMg-JM-jbE">
                                 <rect key="frame" x="21" y="100" width="147.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -79,6 +73,12 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level #" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8f-f8-ySz">
                                 <rect key="frame" x="272" y="289" width="55" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agent's Cover Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQe-Ho-51E">
+                                <rect key="frame" x="16" y="72" width="159" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -94,6 +94,11 @@
                             <constraint firstItem="MMg-JM-jbE" firstAttribute="leading" secondItem="cuP-vl-ke0" secondAttribute="leading" constant="21" id="zj7-0d-eg6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="accessLevelLabel" destination="p8f-f8-ySz" id="E1O-Xz-vP6"/>
+                        <outlet property="coverNameLabel" destination="UQe-Ho-51E" id="05W-I8-oYn"/>
+                        <outlet property="realNameLabel" destination="MMg-JM-jbE" id="pl1-rU-n5r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gGv-bU-Yjt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
