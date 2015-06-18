@@ -71,7 +71,9 @@
         //     to read "Level #". How do we do that?
         //
 
-        
+        self.coverNameLabel.text = self.agent.coverName;
+        self.realNameLabel.text = self.agent.realName;
+        self.accessLevelLabel.text = [NSString stringWithFormat:@"Level %ld", (long)self.agent.accessLevel];
         
         
     }
@@ -86,7 +88,7 @@
     // 22. We need to make sure to call the configureView method so the detail view will be populated with the agent's data.
     //     How do we do that?
     //
-    
+    [self configureView];
     
 }
 
