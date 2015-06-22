@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>DCCAE3F1-76AE-4AEB-8B2B-AADA24E4C1E7</string>
+	<string>D5636918-C5E4-4446-BF8F-B48B1ACA1C84</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Mission Briefing</string>
+	<string>OutaTime</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B4179EFDDAA305AA0FD748220D0A844090DBD57D</key>
 		<string>https://github.com/iankunneke/TIY-Assignmnts.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Mission Briefing/Mission Briefing.xcodeproj</string>
+	<string>OutaTime/OutaTime.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B4179EFDDAA305AA0FD748220D0A844090DBD57D</key>
