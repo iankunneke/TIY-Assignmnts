@@ -14,6 +14,7 @@
 		8BCF9EEB1B389354007E7816 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCF9EEA1B389354007E7816 /* Images.xcassets */; };
 		8BCF9EEE1B389354007E7816 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BCF9EEC1B389354007E7816 /* LaunchScreen.xib */; };
 		8BCF9EFA1B389354007E7816 /* AgeCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF9EF91B389354007E7816 /* AgeCalculatorTests.m */; };
+		8BCF9F051B38A5E8007E7816 /* AgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF9F041B38A5E8007E7816 /* AgeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		8BCF9EF31B389354007E7816 /* AgeCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgeCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCF9EF81B389354007E7816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BCF9EF91B389354007E7816 /* AgeCalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AgeCalculatorTests.m; sourceTree = "<group>"; };
+		8BCF9F031B38A5E8007E7816 /* AgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgeViewController.h; sourceTree = "<group>"; };
+		8BCF9F041B38A5E8007E7816 /* AgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				8BCF9EE21B389354007E7816 /* AppDelegate.m */,
 				8BCF9EE41B389354007E7816 /* ViewController.h */,
 				8BCF9EE51B389354007E7816 /* ViewController.m */,
+				8BCF9F031B38A5E8007E7816 /* AgeViewController.h */,
+				8BCF9F041B38A5E8007E7816 /* AgeViewController.m */,
 				8BCF9EE71B389354007E7816 /* Main.storyboard */,
 				8BCF9EEA1B389354007E7816 /* Images.xcassets */,
 				8BCF9EEC1B389354007E7816 /* LaunchScreen.xib */,
@@ -221,6 +226,7 @@
 			files = (
 				8BCF9EE61B389354007E7816 /* ViewController.m in Sources */,
 				8BCF9EE31B389354007E7816 /* AppDelegate.m in Sources */,
+				8BCF9F051B38A5E8007E7816 /* AgeViewController.m in Sources */,
 				8BCF9EE01B389354007E7816 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
