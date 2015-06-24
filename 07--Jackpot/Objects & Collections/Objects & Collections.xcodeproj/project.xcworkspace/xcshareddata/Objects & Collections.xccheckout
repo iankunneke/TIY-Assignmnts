@@ -5,20 +5,20 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>D5636918-C5E4-4446-BF8F-B48B1ACA1C84</string>
+	<string>E5687840-2471-4F7B-8646-4FC5AC3498DA</string>
 	<key>IDESourceControlProjectName</key>
-	<string>OutaTime</string>
+	<string>Objects &amp; Collections</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B4179EFDDAA305AA0FD748220D0A844090DBD57D</key>
 		<string>https://github.com/iankunneke/TIY-Assignmnts.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>OutaTime/OutaTime.xcodeproj</string>
+	<string>07--Jackpot/Objects &amp; Collections/Objects &amp; Collections.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B4179EFDDAA305AA0FD748220D0A844090DBD57D</key>
-		<string>../../..</string>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/iankunneke/TIY-Assignmnts.git</string>
