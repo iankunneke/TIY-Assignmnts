@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BCD265E1B3B3B89004363DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD265D1B3B3B89004363DA /* main.m */; };
+		8BCD266C1B3B445C004363DA /* BodyPart.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD266B1B3B445C004363DA /* BodyPart.m */; };
+		8BCD266F1B3B448C004363DA /* Head.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD266E1B3B448C004363DA /* Head.m */; };
+		8BCD26841B3B4DB1004363DA /* LeftArm.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD26831B3B4DB1004363DA /* LeftArm.m */; };
+		8BCD26871B3B4EB9004363DA /* RightArm.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD26861B3B4EB9004363DA /* RightArm.m */; };
+		8BCD268A1B3B4F0D004363DA /* Torso.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD26891B3B4F0D004363DA /* Torso.m */; };
+		8BCD268D1B3B5048004363DA /* LeftLeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD268C1B3B5048004363DA /* LeftLeg.m */; };
+		8BCD26901B3B50CA004363DA /* RightLeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD268F1B3B50CA004363DA /* RightLeg.m */; };
+		8BCD26931B3C2792004363DA /* Neck.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD26921B3C2792004363DA /* Neck.m */; };
+		8BCD26961B3C2904004363DA /* Back.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD26951B3C2904004363DA /* Back.m */; };
+		8BCD269C1B3C2C07004363DA /* LeftShoulder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD269B1B3C2C07004363DA /* LeftShoulder.m */; };
+		8BCD269F1B3C2C31004363DA /* RightShoulder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD269E1B3C2C31004363DA /* RightShoulder.m */; };
+		8BCD26A21B3C2C7C004363DA /* LeftKnee.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD26A11B3C2C7C004363DA /* LeftKnee.m */; };
+		8BCD26A51B3C2D0E004363DA /* RightKnee.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD26A41B3C2D0E004363DA /* RightKnee.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8BCD26581B3B3B89004363DA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8BCD265A1B3B3B89004363DA /* Human */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Human; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BCD265D1B3B3B89004363DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8BCD266A1B3B445C004363DA /* BodyPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BodyPart.h; sourceTree = "<group>"; };
+		8BCD266B1B3B445C004363DA /* BodyPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BodyPart.m; sourceTree = "<group>"; };
+		8BCD266D1B3B448C004363DA /* Head.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Head.h; sourceTree = "<group>"; };
+		8BCD266E1B3B448C004363DA /* Head.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Head.m; sourceTree = "<group>"; };
+		8BCD26821B3B4DB1004363DA /* LeftArm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftArm.h; sourceTree = "<group>"; };
+		8BCD26831B3B4DB1004363DA /* LeftArm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftArm.m; sourceTree = "<group>"; };
+		8BCD26851B3B4EB9004363DA /* RightArm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightArm.h; sourceTree = "<group>"; };
+		8BCD26861B3B4EB9004363DA /* RightArm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightArm.m; sourceTree = "<group>"; };
+		8BCD26881B3B4F0D004363DA /* Torso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Torso.h; sourceTree = "<group>"; };
+		8BCD26891B3B4F0D004363DA /* Torso.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Torso.m; sourceTree = "<group>"; };
+		8BCD268B1B3B5048004363DA /* LeftLeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftLeg.h; sourceTree = "<group>"; };
+		8BCD268C1B3B5048004363DA /* LeftLeg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftLeg.m; sourceTree = "<group>"; };
+		8BCD268E1B3B50CA004363DA /* RightLeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightLeg.h; sourceTree = "<group>"; };
+		8BCD268F1B3B50CA004363DA /* RightLeg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightLeg.m; sourceTree = "<group>"; };
+		8BCD26911B3C2792004363DA /* Neck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Neck.h; sourceTree = "<group>"; };
+		8BCD26921B3C2792004363DA /* Neck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Neck.m; sourceTree = "<group>"; };
+		8BCD26941B3C2904004363DA /* Back.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Back.h; sourceTree = "<group>"; };
+		8BCD26951B3C2904004363DA /* Back.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Back.m; sourceTree = "<group>"; };
+		8BCD269A1B3C2C07004363DA /* LeftShoulder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftShoulder.h; sourceTree = "<group>"; };
+		8BCD269B1B3C2C07004363DA /* LeftShoulder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftShoulder.m; sourceTree = "<group>"; };
+		8BCD269D1B3C2C31004363DA /* RightShoulder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightShoulder.h; sourceTree = "<group>"; };
+		8BCD269E1B3C2C31004363DA /* RightShoulder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightShoulder.m; sourceTree = "<group>"; };
+		8BCD26A01B3C2C7C004363DA /* LeftKnee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftKnee.h; sourceTree = "<group>"; };
+		8BCD26A11B3C2C7C004363DA /* LeftKnee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftKnee.m; sourceTree = "<group>"; };
+		8BCD26A31B3C2D0E004363DA /* RightKnee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightKnee.h; sourceTree = "<group>"; };
+		8BCD26A41B3C2D0E004363DA /* RightKnee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightKnee.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BCD26571B3B3B89004363DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BCD26511B3B3B89004363DA = {
+			isa = PBXGroup;
+			children = (
+				8BCD265C1B3B3B89004363DA /* Human */,
+				8BCD265B1B3B3B89004363DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BCD265B1B3B3B89004363DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BCD265A1B3B3B89004363DA /* Human */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BCD265C1B3B3B89004363DA /* Human */ = {
+			isa = PBXGroup;
+			children = (
+				8BCD265D1B3B3B89004363DA /* main.m */,
+				8BCD266A1B3B445C004363DA /* BodyPart.h */,
+				8BCD266B1B3B445C004363DA /* BodyPart.m */,
+				8BCD266D1B3B448C004363DA /* Head.h */,
+				8BCD266E1B3B448C004363DA /* Head.m */,
+				8BCD26821B3B4DB1004363DA /* LeftArm.h */,
+				8BCD26831B3B4DB1004363DA /* LeftArm.m */,
+				8BCD26851B3B4EB9004363DA /* RightArm.h */,
+				8BCD26861B3B4EB9004363DA /* RightArm.m */,
+				8BCD26881B3B4F0D004363DA /* Torso.h */,
+				8BCD26891B3B4F0D004363DA /* Torso.m */,
+				8BCD268B1B3B5048004363DA /* LeftLeg.h */,
+				8BCD268C1B3B5048004363DA /* LeftLeg.m */,
+				8BCD268E1B3B50CA004363DA /* RightLeg.h */,
+				8BCD268F1B3B50CA004363DA /* RightLeg.m */,
+				8BCD26911B3C2792004363DA /* Neck.h */,
+				8BCD26921B3C2792004363DA /* Neck.m */,
+				8BCD26941B3C2904004363DA /* Back.h */,
+				8BCD26951B3C2904004363DA /* Back.m */,
+				8BCD269A1B3C2C07004363DA /* LeftShoulder.h */,
+				8BCD269B1B3C2C07004363DA /* LeftShoulder.m */,
+				8BCD269D1B3C2C31004363DA /* RightShoulder.h */,
+				8BCD269E1B3C2C31004363DA /* RightShoulder.m */,
+				8BCD26A01B3C2C7C004363DA /* LeftKnee.h */,
+				8BCD26A11B3C2C7C004363DA /* LeftKnee.m */,
+				8BCD26A31B3C2D0E004363DA /* RightKnee.h */,
+				8BCD26A41B3C2D0E004363DA /* RightKnee.m */,
+			);
+			path = Human;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BCD26591B3B3B89004363DA /* Human */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BCD26611B3B3B89004363DA /* Build configuration list for PBXNativeTarget "Human" */;
+			buildPhases = (
+				8BCD26561B3B3B89004363DA /* Sources */,
+				8BCD26571B3B3B89004363DA /* Frameworks */,
+				8BCD26581B3B3B89004363DA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Human;
+			productName = Human;
+			productReference = 8BCD265A1B3B3B89004363DA /* Human */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BCD26521B3B3B89004363DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "The Iron Yard";
+				TargetAttributes = {
+					8BCD26591B3B3B89004363DA = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = 8BCD26551B3B3B89004363DA /* Build configuration list for PBXProject "Human" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8BCD26511B3B3B89004363DA;
+			productRefGroup = 8BCD265B1B3B3B89004363DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BCD26591B3B3B89004363DA /* Human */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BCD26561B3B3B89004363DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BCD26961B3C2904004363DA /* Back.m in Sources */,
+				8BCD266C1B3B445C004363DA /* BodyPart.m in Sources */,
+				8BCD26A21B3C2C7C004363DA /* LeftKnee.m in Sources */,
+				8BCD266F1B3B448C004363DA /* Head.m in Sources */,
+				8BCD26931B3C2792004363DA /* Neck.m in Sources */,
+				8BCD26A51B3C2D0E004363DA /* RightKnee.m in Sources */,
+				8BCD265E1B3B3B89004363DA /* main.m in Sources */,
+				8BCD26901B3B50CA004363DA /* RightLeg.m in Sources */,
+				8BCD269F1B3C2C31004363DA /* RightShoulder.m in Sources */,
+				8BCD268A1B3B4F0D004363DA /* Torso.m in Sources */,
+				8BCD268D1B3B5048004363DA /* LeftLeg.m in Sources */,
+				8BCD26871B3B4EB9004363DA /* RightArm.m in Sources */,
+				8BCD269C1B3C2C07004363DA /* LeftShoulder.m in Sources */,
+				8BCD26841B3B4DB1004363DA /* LeftArm.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8BCD265F1B3B3B89004363DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8BCD26601B3B3B89004363DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8BCD26621B3B3B89004363DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8BCD26631B3B3B89004363DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BCD26551B3B3B89004363DA /* Build configuration list for PBXProject "Human" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BCD265F1B3B3B89004363DA /* Debug */,
+				8BCD26601B3B3B89004363DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BCD26611B3B3B89004363DA /* Build configuration list for PBXNativeTarget "Human" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BCD26621B3B3B89004363DA /* Debug */,
+				8BCD26631B3B3B89004363DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BCD26521B3B3B89004363DA /* Project object */;
+}
