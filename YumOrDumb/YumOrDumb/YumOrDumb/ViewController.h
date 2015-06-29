@@ -1,8 +1,8 @@
 //
 //  ViewController.h
-//  Weekend2
+//  YumOrDumb
 //
-//  Created by ian kunneke on 6/25/15.
+//  Created by ian kunneke on 6/28/15.
 //  Copyright (c) 2015 The Iron Yard. All rights reserved.
 //
 
@@ -10,6 +10,4 @@
 
 @interface ViewController : UIViewController
 
-
 @end
-

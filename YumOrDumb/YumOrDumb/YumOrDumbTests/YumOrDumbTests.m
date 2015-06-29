@@ -1,19 +1,19 @@
 //
-//  Weekend2Tests.m
-//  Weekend2Tests
+//  YumOrDumbTests.m
+//  YumOrDumbTests
 //
-//  Created by ian kunneke on 6/25/15.
+//  Created by ian kunneke on 6/28/15.
 //  Copyright (c) 2015 The Iron Yard. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface Weekend2Tests : XCTestCase
+@interface YumOrDumbTests : XCTestCase
 
 @end
 
-@implementation Weekend2Tests
+@implementation YumOrDumbTests
 
 - (void)setUp {
     [super setUp];

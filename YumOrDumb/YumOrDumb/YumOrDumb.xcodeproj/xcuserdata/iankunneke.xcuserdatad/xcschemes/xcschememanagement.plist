@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Weekend2.xcscheme</key>
+		<key>YumOrDumb.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8BC931801B3C7902002C418F</key>
+		<key>8BC931B51B4057F5002C418F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8BC931991B3C7902002C418F</key>
+		<key>8BC931CE1B4057F5002C418F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
