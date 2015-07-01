@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>3C240CE5-6662-49A7-B9C8-ACB722CAAE3F</string>
+	<string>29DE0591-AF6E-4816-A3C1-F26FE3FB91F3</string>
 	<key>IDESourceControlProjectName</key>
-	<string>AgeCalculator</string>
+	<string>YumOrDumb</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B4179EFDDAA305AA0FD748220D0A844090DBD57D</key>
 		<string>https://github.com/iankunneke/TIY-Assignmnts.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>05--Age-Calculator/AgeCalculator/AgeCalculator.xcodeproj</string>
+	<string>YumOrDumb/YumOrDumb/YumOrDumb.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B4179EFDDAA305AA0FD748220D0A844090DBD57D</key>
