@@ -13,6 +13,8 @@
 @property (nonatomic) NSString *teamName;
 @property (nonatomic) NSString *sport;
 @property (nonatomic) NSString *bestPlayer;
+@property (assign) int wins;
+@property (assign) int loses;
 
 
 @end

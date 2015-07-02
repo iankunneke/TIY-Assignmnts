@@ -21,7 +21,7 @@ NSArray *theTeams;
 {
     [super viewDidLoad];
     
-    NSArray *teamData = @[@{@"teamName": @"Orlando Tragic", @"sport": @"Basketball", @"bestPlayer": @"Pat Garrity"}, @{@"teamName": @"Cleveland Cavaliers", @"sport": @"Baketball", @"bestPlayer": @"LeChoke James"}, @{@"teamName": @"Denver Nuggets", @"sport": @"Basketball", @"bestPlayer": @"the fans"}, @{@"teamName": @"Pittsburgh Steelers", @"sport": @"Football", @"bestPlayer": @"Antonio Brown"}, @{@"teamName": @"Miami Dolphins", @"sport": @"Football", @"bestPlayer": @"Ray Finkle"}, @{@"teamName": @"Florida Gators", @"sport": @"Football", @"bestPlayer": @"Tim Tebow"}, @{@"teamName": @"FSU crimiNoles", @"sport": @"Football", @"bestPlayer": @"Prisoners"}, @{@"teamName": @"The Iron Yard", @"sport": @"Programming", @"bestPlayer": @"Joben Gohlke"}, @{@"teamName": @"Pittsburgh Pirates", @"sport": @"Baseball", @"bestPlayer": @"Andrew McCutchen"}, @{@"teamName": @"UFC", @"sport": @"Fighting", @"bestPlayer": @"Chuck Norris"}];
+    NSArray *teamData = @[@{@"teamName": @"Orlando Tragic", @"sport": @"NBA", @"bestPlayer": @"Pat Garrity", @"wins": @72, @"loses": @9}, @{@"teamName": @"Cleveland Cavaliers", @"sport": @"NBA", @"bestPlayer": @"LeChoke James", @"wins": @22, @"loses": @59}, @{@"teamName": @"Denver Nuggets", @"sport": @"NBA", @"bestPlayer": @"the fans", @"wins": @41, @"loses": @41}, @{@"teamName": @"Pittsburgh Steelers", @"sport": @"NFL", @"bestPlayer": @"Antonio Brown", @"wins": @16, @"loses": @0}, @{@"teamName": @"Miami Dolphins", @"sport": @"NFL", @"bestPlayer": @"Ray Finkle", @"wins": @8, @"loses": @8}, @{@"teamName": @"Florida Gators", @"sport": @"NCAA", @"bestPlayer": @"Tim Tebow", @"wins": @12, @"loses": @1}, @{@"teamName": @"FSU crimiNoles", @"sport": @"NCAA", @"bestPlayer": @"Prisoners", @"wins": @3, @"loses": @9}, @{@"teamName": @"The Iron Yard", @"sport": @"Programming", @"bestPlayer": @"Joben Gohlke", @"wins": @348, @"loses": @0}, @{@"teamName": @"Pittsburgh Pirates", @"sport": @"MLB", @"bestPlayer": @"Andrew McCutchen", @"wins": @100, @"loses": @60}, @{@"teamName": @"UFC", @"sport": @"Fighting", @"bestPlayer": @"Chuck Norris", @"wins": @8609238469032869, @"loses": @0}];
     
     NSMutableArray *teamStorage = [[NSMutableArray alloc] init];
     
@@ -31,6 +31,8 @@ NSArray *theTeams;
         aTeam.teamName = thatTeam[@"teamName"];
         aTeam.sport = thatTeam[@"sport"];
         aTeam.bestPlayer = thatTeam[@"bestPlayer"];
+        aTeam.wins = [thatTeam[@"wins"] intValue];
+        aTeam.loses = [thatTeam[@"loses"] intValue];
         [teamStorage addObject:aTeam];
         
         
@@ -65,7 +67,7 @@ NSArray *theTeams;
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TeamCell" forIndexPath:indexPath];
     
     Teams *theTeam = theTeams[indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@: %@- %@",theTeam.teamName, theTeam.sport, theTeam.bestPlayer];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@: %@- %@ %d-%d",theTeam.teamName, theTeam.sport, theTeam.bestPlayer, theTeam.wins, theTeam.loses];
     
     
     
