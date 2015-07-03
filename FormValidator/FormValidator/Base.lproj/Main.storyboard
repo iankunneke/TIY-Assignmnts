@@ -49,7 +49,7 @@
                                     <outlet property="delegate" destination="mpg-OH-WTu" id="cdk-FU-iub"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BwQ-Dm-yo6">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First &amp; Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BwQ-Dm-yo6">
                                 <rect key="frame" x="28" y="100" width="456" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>

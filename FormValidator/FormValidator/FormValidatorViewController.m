@@ -48,8 +48,12 @@
     {
         if (![self.nameTextField.text isEqualToString:@""])
         {
+            NSArray *theCoolNames = [self.nameTextField.text componentsSeparatedByString:@" "];
+            if ([theCoolNames count] == 2)
+            {
             returnValue = YES;
             [self.addressTextField becomeFirstResponder];
+            }
         }
     }
     
@@ -60,8 +64,13 @@
     {
         if (![self.addressTextField.text isEqualToString:@""])
         {
-            returnValue = YES;
-            [self.cityTextField becomeFirstResponder];
+            NSArray *addressPlace = [self.addressTextField.text componentsSeparatedByString:@" "];
+            if ([addressPlace count] >= 3)
+            {
+                returnValue = YES;
+                [self.cityTextField becomeFirstResponder];
+            }
+            
         }
     }
     
