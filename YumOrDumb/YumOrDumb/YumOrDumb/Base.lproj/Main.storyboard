@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3OM-Ia-X8l">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+>>>>>>> 09--AppDesignAnalysis
     </dependencies>
     <scenes>
         <!--Table View Controller-->
@@ -13,10 +20,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
+<<<<<<< HEAD
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="smj-tg-jh9">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="smj-tg-jh9" id="etl-Z1-JJf">
                                     <autoresizingMask key="autoresizingMask"/>
+=======
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RestaurantCell" id="smj-tg-jh9">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="smj-tg-jh9" id="etl-Z1-JJf">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exe-Jd-B6u">
+                                            <rect key="frame" x="15" y="11.5" width="42" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLo-bQ-XLs">
+                                            <rect key="frame" x="543" y="11.5" width="42" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="GLo-bQ-XLs" secondAttribute="trailing" constant="15" id="T3I-lg-0oh"/>
+                                        <constraint firstItem="exe-Jd-B6u" firstAttribute="leading" secondItem="etl-Z1-JJf" secondAttribute="leading" constant="15" id="VsH-65-KGh"/>
+                                        <constraint firstAttribute="centerY" secondItem="exe-Jd-B6u" secondAttribute="centerY" id="nNR-nw-xzi"/>
+                                        <constraint firstAttribute="centerY" secondItem="GLo-bQ-XLs" secondAttribute="centerY" id="yjF-eL-573"/>
+                                    </constraints>
+>>>>>>> 09--AppDesignAnalysis
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -35,7 +69,11 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JBh-hu-AjG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="2137" y="376"/>
+=======
+            <point key="canvasLocation" x="2131" y="370"/>
+>>>>>>> 09--AppDesignAnalysis
         </scene>
         <!--View Controller-->
         <scene sceneID="Ha6-Ui-3zI">
@@ -49,6 +87,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Boq-0G-ozZ">
                                 <rect key="frame" x="331" y="116" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -74,6 +113,56 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+=======
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaraunt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Boq-0G-ozZ">
+                                <rect key="frame" x="258" y="19" width="83.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1-5" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YBE-Ae-ZfI">
+                                <rect key="frame" x="150" y="347" width="300" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iD4-Zs-tH0">
+                                <rect key="frame" x="150" y="48" width="300" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luc-39-bsV">
+                                <rect key="frame" x="275" y="318" width="50" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7m-XR-oVJ">
+                                <rect key="frame" x="281" y="430" width="37" height="30"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="luc-39-bsV" firstAttribute="centerX" secondItem="YBE-Ae-ZfI" secondAttribute="centerX" id="0lK-eD-U2h"/>
+                            <constraint firstItem="YBE-Ae-ZfI" firstAttribute="top" secondItem="luc-39-bsV" secondAttribute="bottom" constant="8" id="2rh-4M-Hco"/>
+                            <constraint firstItem="iD4-Zs-tH0" firstAttribute="centerX" secondItem="Boq-0G-ozZ" secondAttribute="centerX" id="BCS-gv-2Fk"/>
+                            <constraint firstAttribute="centerY" secondItem="luc-39-bsV" secondAttribute="centerY" constant="-28.5" id="EwZ-nI-omF"/>
+                            <constraint firstItem="YBE-Ae-ZfI" firstAttribute="centerX" secondItem="N7m-XR-oVJ" secondAttribute="centerX" constant="0.5" id="HIl-6s-9YL"/>
+                            <constraint firstItem="iD4-Zs-tH0" firstAttribute="top" secondItem="Boq-0G-ozZ" secondAttribute="bottom" constant="8.5" id="Hpd-Uz-C1V"/>
+                            <constraint firstAttribute="centerX" secondItem="luc-39-bsV" secondAttribute="centerX" id="OQ8-Qw-1Dr"/>
+                            <constraint firstItem="iD4-Zs-tH0" firstAttribute="width" secondItem="w7F-0Z-vYz" secondAttribute="width" multiplier="0.5" id="VvE-E7-xUf"/>
+                            <constraint firstAttribute="centerY" secondItem="N7m-XR-oVJ" secondAttribute="centerY" constant="-145" id="b3K-We-3oB"/>
+                            <constraint firstAttribute="centerX" secondItem="Boq-0G-ozZ" secondAttribute="centerX" id="evs-IP-Ra7"/>
+                            <constraint firstItem="N7m-XR-oVJ" firstAttribute="top" secondItem="YBE-Ae-ZfI" secondAttribute="bottom" constant="53" id="mKs-gK-epI"/>
+                            <constraint firstItem="YBE-Ae-ZfI" firstAttribute="width" secondItem="w7F-0Z-vYz" secondAttribute="width" multiplier="0.5" id="nnp-oz-GWY"/>
+                            <constraint firstItem="Boq-0G-ozZ" firstAttribute="top" secondItem="18U-IM-H0w" secondAttribute="bottom" constant="-1" id="t2o-jc-fdx"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+>>>>>>> 09--AppDesignAnalysis
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mus-sH-IhS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
