@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ListTableViewController.h"
 
-@interface ViewController : UIViewController
+@interface RestaurantDetailViewController : UIViewController
+
+@interface (nonatomic) id<RestaurantDetailDelegate> delegate;
+
+
 
 @end

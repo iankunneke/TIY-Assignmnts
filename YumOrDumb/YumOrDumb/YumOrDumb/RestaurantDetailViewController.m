@@ -1,25 +1,25 @@
 //
-//  TableViewController.m
+//  ViewController.m
 //  YumOrDumb
 //
 //  Created by ian kunneke on 6/28/15.
 //  Copyright (c) 2015 The Iron Yard. All rights reserved.
 //
 
-#import "TableViewController.h"
+#import "RestaurantDetailViewController.h"
 
-@interface TableViewController ()
-{
-    NSMutableArray *cells;
-}
+@interface RestaurantDetailViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *restaurantLabel;
+@property (weak, nonatomic) IBOutlet UILabel *ratingLabel;
 
 @end
 
-@implementation TableViewController
+@implementation RestaurantDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    cells = [[NSMutableArray alloc] init];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

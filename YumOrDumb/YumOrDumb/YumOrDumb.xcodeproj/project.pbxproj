@@ -13,8 +13,9 @@
 		8BC931C71B4057F5002C418F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BC931C61B4057F5002C418F /* Images.xcassets */; };
 		8BC931CA1B4057F5002C418F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BC931C81B4057F5002C418F /* LaunchScreen.xib */; };
 		8BC931D61B4057F5002C418F /* YumOrDumbTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC931D51B4057F5002C418F /* YumOrDumbTests.m */; };
-		8BC931E11B405937002C418F /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC931E01B405937002C418F /* TableViewController.m */; };
-		8BC931E41B40594F002C418F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC931E31B40594F002C418F /* ViewController.m */; };
+		8BC931E11B405937002C418F /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC931E01B405937002C418F /* ListTableViewController.m */; };
+		8BC931E41B40594F002C418F /* RestaurantDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC931E31B40594F002C418F /* RestaurantDetailViewController.m */; };
+		8BCD63541B41DD0900DE172B /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD63531B41DD0900DE172B /* Restaurant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +40,12 @@
 		8BC931CF1B4057F5002C418F /* YumOrDumbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YumOrDumbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BC931D41B4057F5002C418F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BC931D51B4057F5002C418F /* YumOrDumbTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YumOrDumbTests.m; sourceTree = "<group>"; };
-		8BC931DF1B405937002C418F /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		8BC931E01B405937002C418F /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		8BC931E21B40594F002C418F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8BC931E31B40594F002C418F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8BC931DF1B405937002C418F /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
+		8BC931E01B405937002C418F /* ListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
+		8BC931E21B40594F002C418F /* RestaurantDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantDetailViewController.h; sourceTree = "<group>"; };
+		8BC931E31B40594F002C418F /* RestaurantDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantDetailViewController.m; sourceTree = "<group>"; };
+		8BCD63521B41DD0900DE172B /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
+		8BCD63531B41DD0900DE172B /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,14 +89,16 @@
 			children = (
 				8BC931BD1B4057F5002C418F /* AppDelegate.h */,
 				8BC931BE1B4057F5002C418F /* AppDelegate.m */,
-				8BC931DF1B405937002C418F /* TableViewController.h */,
-				8BC931E01B405937002C418F /* TableViewController.m */,
-				8BC931E21B40594F002C418F /* ViewController.h */,
-				8BC931E31B40594F002C418F /* ViewController.m */,
+				8BC931DF1B405937002C418F /* ListTableViewController.h */,
+				8BC931E01B405937002C418F /* ListTableViewController.m */,
+				8BC931E21B40594F002C418F /* RestaurantDetailViewController.h */,
+				8BC931E31B40594F002C418F /* RestaurantDetailViewController.m */,
 				8BC931C31B4057F5002C418F /* Main.storyboard */,
 				8BC931C61B4057F5002C418F /* Images.xcassets */,
 				8BC931C81B4057F5002C418F /* LaunchScreen.xib */,
 				8BC931B91B4057F5002C418F /* Supporting Files */,
+				8BCD63521B41DD0900DE172B /* Restaurant.h */,
+				8BCD63531B41DD0900DE172B /* Restaurant.m */,
 			);
 			path = YumOrDumb;
 			sourceTree = "<group>";
@@ -225,8 +230,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BC931BF1B4057F5002C418F /* AppDelegate.m in Sources */,
-				8BC931E11B405937002C418F /* TableViewController.m in Sources */,
-				8BC931E41B40594F002C418F /* ViewController.m in Sources */,
+				8BCD63541B41DD0900DE172B /* Restaurant.m in Sources */,
+				8BC931E11B405937002C418F /* ListTableViewController.m in Sources */,
+				8BC931E41B40594F002C418F /* RestaurantDetailViewController.m in Sources */,
 				8BC931BC1B4057F5002C418F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +428,7 @@
 				8BC931DB1B4057F5002C418F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BC931DC1B4057F5002C418F /* Build configuration list for PBXNativeTarget "YumOrDumbTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +437,7 @@
 				8BC931DE1B4057F5002C418F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
