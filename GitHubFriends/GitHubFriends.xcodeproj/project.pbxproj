@@ -13,6 +13,9 @@
 		8BC39D8C1B4D5F2500BC36A7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BC39D8A1B4D5F2500BC36A7 /* LaunchScreen.xib */; };
 		8BC39D981B4D5F2500BC36A7 /* GitHubFriendsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC39D971B4D5F2500BC36A7 /* GitHubFriendsTests.m */; };
 		8BC39DA31B4D643000BC36A7 /* FriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC39DA21B4D643000BC36A7 /* FriendsTableViewController.m */; };
+		8BC39DA61B4D6C5800BC36A7 /* FriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC39DA51B4D6C5800BC36A7 /* FriendCell.m */; };
+		8BC39DA91B4D727B00BC36A7 /* NewFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC39DA81B4D727B00BC36A7 /* NewFriendViewController.m */; };
+		8BC39DAC1B4D72A600BC36A7 /* FriendDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC39DAB1B4D72A600BC36A7 /* FriendDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,12 @@
 		8BC39D971B4D5F2500BC36A7 /* GitHubFriendsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitHubFriendsTests.m; sourceTree = "<group>"; };
 		8BC39DA11B4D643000BC36A7 /* FriendsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsTableViewController.h; sourceTree = "<group>"; };
 		8BC39DA21B4D643000BC36A7 /* FriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsTableViewController.m; sourceTree = "<group>"; };
+		8BC39DA41B4D6C5800BC36A7 /* FriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendCell.h; sourceTree = "<group>"; };
+		8BC39DA51B4D6C5800BC36A7 /* FriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendCell.m; sourceTree = "<group>"; };
+		8BC39DA71B4D727B00BC36A7 /* NewFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFriendViewController.h; sourceTree = "<group>"; };
+		8BC39DA81B4D727B00BC36A7 /* NewFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFriendViewController.m; sourceTree = "<group>"; };
+		8BC39DAA1B4D72A600BC36A7 /* FriendDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendDetailViewController.h; sourceTree = "<group>"; };
+		8BC39DAB1B4D72A600BC36A7 /* FriendDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +92,12 @@
 				8BC39D801B4D5F2500BC36A7 /* AppDelegate.m */,
 				8BC39DA11B4D643000BC36A7 /* FriendsTableViewController.h */,
 				8BC39DA21B4D643000BC36A7 /* FriendsTableViewController.m */,
+				8BC39DA41B4D6C5800BC36A7 /* FriendCell.h */,
+				8BC39DA51B4D6C5800BC36A7 /* FriendCell.m */,
+				8BC39DA71B4D727B00BC36A7 /* NewFriendViewController.h */,
+				8BC39DA81B4D727B00BC36A7 /* NewFriendViewController.m */,
+				8BC39DAA1B4D72A600BC36A7 /* FriendDetailViewController.h */,
+				8BC39DAB1B4D72A600BC36A7 /* FriendDetailViewController.m */,
 				8BC39D881B4D5F2500BC36A7 /* Images.xcassets */,
 				8BC39D8A1B4D5F2500BC36A7 /* LaunchScreen.xib */,
 				8BC39D7B1B4D5F2500BC36A7 /* Supporting Files */,
@@ -215,9 +230,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BC39DA91B4D727B00BC36A7 /* NewFriendViewController.m in Sources */,
+				8BC39DAC1B4D72A600BC36A7 /* FriendDetailViewController.m in Sources */,
 				8BC39DA31B4D643000BC36A7 /* FriendsTableViewController.m in Sources */,
 				8BC39D811B4D5F2500BC36A7 /* AppDelegate.m in Sources */,
 				8BC39D7E1B4D5F2500BC36A7 /* main.m in Sources */,
+				8BC39DA61B4D6C5800BC36A7 /* FriendCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
