@@ -46,6 +46,14 @@
     self.navigationItem.rightBarButtonItem = addFriendButton;
 }
 
+
+
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self.tableView reloadData];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

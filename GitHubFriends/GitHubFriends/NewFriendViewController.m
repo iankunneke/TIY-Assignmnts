@@ -8,7 +8,10 @@
 
 #import "NewFriendViewController.h"
 
-@interface NewFriendViewController ()
+@interface NewFriendViewController () <NSURLSessionDataDelegate>
+{
+    NSMutableData *receivedData;
+}
 
 @property (nonatomic) UITextField *loginTextField;
 
@@ -43,7 +46,7 @@
     [self.searchButton setFrame:CGRectMake(self.loginTextField.frame.origin.x, self.loginTextField.frame.origin.y + self.loginTextField.frame.size.height + 10.0f, self.loginTextField.frame.size.width, 40.0f)];
     [self.view addSubview:self.searchButton];
     
-    [self.cancelButton setFrame:CGRectMake(self.searchButton.frame.origin.x, self.searchButton.frame.origin.y + self.searchButton.frame.size.height +25.0f, self.searchButton.frame.size.width, 50.0f)];
+    [self.cancelButton setFrame:CGRectMake(self.searchButton.frame.origin.x, self.searchButton.frame.origin.y + self.searchButton.frame.size.height +25.0f, self.searchButton.frame.size.width, 40.0f)];
     [self.view addSubview:self.cancelButton];
 }
 
@@ -59,10 +62,57 @@
 
 -(IBAction)searchButtonTapped:(UIButton *)sender
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    NSString *login = self.loginTextField.text;
+    if (![login isEqualToString:@""])
+    {
+        NSString *urlString = [NSString stringWithFormat:@"https://api.github.com/users/%@", login];
+        NSURL *url = [NSURL URLWithString:urlString];
+        //NSURLRequest *request = [NSURLRequest requestWithURL:url];
+        //NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+        //NSDictionary *userInfo = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableContainers error:nil];
+        
+        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+        NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:[NSOperationQueue mainQueue]];
+        NSURLSessionDataTask *dataTask = [session dataTaskWithURL:url];
+        [dataTask resume];
+        
+        //[self.friends addObject:userInfo];
+        //[self dismissViewControllerAnimated:YES completion:nil];
+        
+    }
 }
 
+#pragma mark - URLSession data delegate
 
+- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveResponse:(NSURLResponse *)response completionHandler:(void (^)(NSURLSessionResponseDisposition))completionHandler
+{
+    completionHandler(NSURLSessionResponseAllow);
+}
+
+-(void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveData:(NSData *)data
+{
+    if (!receivedData)
+    {
+         receivedData = [[NSMutableData alloc]init];
+    }
+    [receivedData appendData:data];
+    
+}
+
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error
+{
+    if (!error)
+    {
+        NSLog(@"Download successful!");
+        NSDictionary *userInfo = [NSJSONSerialization JSONObjectWithData:receivedData options:NSJSONReadingMutableContainers error:nil];
+        [self.friends addObject:userInfo];
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+    else
+    {
+        
+    }
+}
 
 
 

@@ -28,29 +28,33 @@
 
 - (void)configureView
 {
-    self.nameLabel = [[UILabel alloc] init];
-    self.nameLabel.text = [NSString stringWithFormat:@"Name, %@", self.friendInfo[@"name"]];
-    [self.nameLabel setFrame:CGRectMake(self.view.frame.size.width/4, 100.00f, self.view.frame.size.width/2, 30.0f)];
-    [self.view addSubview: self.nameLabel];
+    
+    self.title = self.friendInfo[@"name"];
+    
+    /*self.nameLabel = [[UILabel alloc] init];
+    self.nameLabel.text = [NSString stringWithFormat:@"Name: %@", self.friendInfo[@"name"]];
+    [self.nameLabel setFrame:CGRectMake(self.view.frame.size.width/4, 100.00f, self.view.frame.size.width/2, 40.0f)];
+    [self.view addSubview: self.nameLabel]; */
     
     
     self.companyLabel = [[UILabel alloc] init];
-    self.companyLabel.text = [NSString stringWithFormat:@"Company, %@", self.friendInfo[@"company"]];
-    [self.companyLabel setFrame:CGRectMake(self.nameLabel.frame.origin.x, self.nameLabel.frame.origin.y +self.nameLabel.frame.size.height +10.0f, self.nameLabel.frame.size.width, 40.0f)];
+    self.companyLabel.text = [NSString stringWithFormat:@"Company: %@", self.friendInfo[@"company"]];
+    [self.companyLabel setFrame:CGRectMake(self.view.frame.size.width/4, 100.0f, self.view.frame.size.width/2, 40.0f)];
     [self.view addSubview:self.companyLabel];
     
     
     self.loginLabel = [[UILabel alloc] init];
-    self.loginLabel.text = [NSString stringWithFormat:@"Username, %@", self.friendInfo[@"login"]];
-    [self.loginLabel setFrame:CGRectMake(self.nameLabel.frame.origin.x, self.companyLabel.frame.origin.y +self.companyLabel.frame.size.height +10.0f, self.companyLabel.frame.size.width, 40.0f)];
+    self.loginLabel.text = [NSString stringWithFormat:@"Username: %@", self.friendInfo[@"login"]];
+    [self.loginLabel setFrame:CGRectMake(self.companyLabel.frame.origin.x, self.companyLabel.frame.origin.y +self.companyLabel.frame.size.height +10.0f, self.companyLabel.frame.size.width, 40.0f)];
     [self.view addSubview:self.loginLabel];
     
     
     
     self.locationLabel = [[UILabel alloc] init];
-    self.locationLabel.text = [NSString stringWithFormat:@"Location, %@", self.friendInfo[@"location"]];
+    self.locationLabel.text = [NSString stringWithFormat:@"Location: %@", self.friendInfo[@"location"]];
     [self.locationLabel setFrame:CGRectMake(self.loginLabel.frame.origin.x, self.loginLabel.frame.origin.y +self.loginLabel.frame.size.height +10.0f, self.loginLabel.frame.size.width, 40.0f)];
     [self.view addSubview:self.locationLabel];
+    
     
     
 }
