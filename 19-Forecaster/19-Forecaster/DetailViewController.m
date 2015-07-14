@@ -10,16 +10,40 @@
 
 @interface DetailViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *highTemp;
+@property (weak, nonatomic) IBOutlet UILabel *lowTemp;
+
+@property (weak, nonatomic) IBOutlet UILabel *feelsLikeTemp;
+
+@property (weak, nonatomic) IBOutlet UILabel *humidity;
+
+@property (weak, nonatomic) IBOutlet UIImageView *conditionImage;
+@property (weak, nonatomic) IBOutlet UILabel *currentCondition;
+
+@property (weak, nonatomic) IBOutlet UILabel *rainChance;
+
+@property (weak, nonatomic) IBOutlet UILabel *sunriseTime;
+@property (weak, nonatomic) IBOutlet UILabel *sunsetTime;
+
+@property (weak, nonatomic) IBOutlet UILabel *currentCity;
+
+
+
+
 @end
+
 
 @implementation DetailViewController
 
-- (void)viewDidLoad {
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

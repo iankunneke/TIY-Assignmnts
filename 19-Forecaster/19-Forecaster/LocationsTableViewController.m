@@ -7,46 +7,78 @@
 //
 
 #import "LocationsTableViewController.h"
+#import "PlacesCell.h"
 
 @interface LocationsTableViewController ()
+{
+    NSMutableArray *places;
+}
+
 
 @end
 
 @implementation LocationsTableViewController
 
-- (void)viewDidLoad {
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.title = @"Forecaster";
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    
+    places = [[NSMutableArray alloc] init];
+    [places addObject:
+                    @{
+                      @"temperature": @94.09,
+                      @"temperatureMin": @74.86,
+                      @"temperatureMax": @94.7,
+                      @"apparentTemperature": @100.09,
+                      @"humidity": @0.71,
+                      @"summary": @"Partly Cloudy",
+                      @"icon": @"partly-cloudy-day",
+                      @"precipProbability": @0.84,
+                      @"sunriseTime": @1436697431,
+                      @"sunsetTime": @1436747205,
+                      @"city": @"Orlando",
+                      @"state": @"Florida",
+                      @"date": @"July 10, 2015"
+                      }];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+
     // Return the number of sections.
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+
     // Return the number of rows in the section.
-    return 1;
+    return [places count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"myCityCell" forIndexPath:indexPath];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    PlacesCell *cell = [tableView dequeueReusableCellWithIdentifier:@"myCityCell" forIndexPath:indexPath];
+  
+    NSDictionary *aPlace = [places objectAtIndex:indexPath.row];
     
-    // Configure the cell...
+    cell.locationsCity.text = [aPlace objectForKey:@"city"];
+    cell.locationsState.text = [aPlace objectForKey:@"state"];
+    cell.locationsConditionImage.image = [aPlace objectForKey:@"icon"];
+    cell.locationsTemp.text = [aPlace objectForKey:@"temperature"];
     
     return cell;
 }

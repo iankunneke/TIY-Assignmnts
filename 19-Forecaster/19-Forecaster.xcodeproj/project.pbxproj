@@ -17,6 +17,10 @@
 		8BC39DE41B4EF0EB00BC36A7 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC39DE31B4EF0EB00BC36A7 /* DetailViewController.m */; };
 		8BC39DE61B4EF9A300BC36A7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC39DE51B4EF9A300BC36A7 /* MapKit.framework */; };
 		8BC39DE91B4FEF5900BC36A7 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC39DE81B4FEF5900BC36A7 /* SearchViewController.m */; };
+		8BC39DEC1B51A34100BC36A7 /* CityData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC39DEB1B51A34100BC36A7 /* CityData.m */; };
+		8BC39DEF1B51A36400BC36A7 /* WeatherConditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC39DEE1B51A36400BC36A7 /* WeatherConditions.m */; };
+		8BC39DF21B51A38E00BC36A7 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC39DF11B51A38E00BC36A7 /* NetworkManager.m */; };
+		8BC39DF51B52C3E500BC36A7 /* PlacesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC39DF41B52C3E500BC36A7 /* PlacesCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,14 @@
 		8BC39DE51B4EF9A300BC36A7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8BC39DE71B4FEF5900BC36A7 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		8BC39DE81B4FEF5900BC36A7 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		8BC39DEA1B51A34100BC36A7 /* CityData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityData.h; sourceTree = "<group>"; };
+		8BC39DEB1B51A34100BC36A7 /* CityData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityData.m; sourceTree = "<group>"; };
+		8BC39DED1B51A36400BC36A7 /* WeatherConditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherConditions.h; sourceTree = "<group>"; };
+		8BC39DEE1B51A36400BC36A7 /* WeatherConditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherConditions.m; sourceTree = "<group>"; };
+		8BC39DF01B51A38E00BC36A7 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		8BC39DF11B51A38E00BC36A7 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		8BC39DF31B52C3E500BC36A7 /* PlacesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesCell.h; sourceTree = "<group>"; };
+		8BC39DF41B52C3E500BC36A7 /* PlacesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,14 @@
 				8BC39DE31B4EF0EB00BC36A7 /* DetailViewController.m */,
 				8BC39DE71B4FEF5900BC36A7 /* SearchViewController.h */,
 				8BC39DE81B4FEF5900BC36A7 /* SearchViewController.m */,
+				8BC39DF31B52C3E500BC36A7 /* PlacesCell.h */,
+				8BC39DF41B52C3E500BC36A7 /* PlacesCell.m */,
+				8BC39DEA1B51A34100BC36A7 /* CityData.h */,
+				8BC39DEB1B51A34100BC36A7 /* CityData.m */,
+				8BC39DED1B51A36400BC36A7 /* WeatherConditions.h */,
+				8BC39DEE1B51A36400BC36A7 /* WeatherConditions.m */,
+				8BC39DF01B51A38E00BC36A7 /* NetworkManager.h */,
+				8BC39DF11B51A38E00BC36A7 /* NetworkManager.m */,
 				8BC39DC61B4EEE9C00BC36A7 /* Images.xcassets */,
 				8BC39DC81B4EEE9C00BC36A7 /* LaunchScreen.xib */,
 				8BC39DB91B4EEE9C00BC36A7 /* Supporting Files */,
@@ -233,11 +253,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BC39DF21B51A38E00BC36A7 /* NetworkManager.m in Sources */,
 				8BC39DE11B4EEF5100BC36A7 /* LocationsTableViewController.m in Sources */,
+				8BC39DF51B52C3E500BC36A7 /* PlacesCell.m in Sources */,
 				8BC39DBF1B4EEE9C00BC36A7 /* AppDelegate.m in Sources */,
 				8BC39DE91B4FEF5900BC36A7 /* SearchViewController.m in Sources */,
 				8BC39DBC1B4EEE9C00BC36A7 /* main.m in Sources */,
+				8BC39DEC1B51A34100BC36A7 /* CityData.m in Sources */,
 				8BC39DE41B4EF0EB00BC36A7 /* DetailViewController.m in Sources */,
+				8BC39DEF1B51A36400BC36A7 /* WeatherConditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +390,7 @@
 				INFOPLIST_FILE = "19-Forecaster/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -376,6 +401,7 @@
 				INFOPLIST_FILE = "19-Forecaster/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
