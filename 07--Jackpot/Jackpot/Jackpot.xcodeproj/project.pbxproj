@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B8AD1111B55A581001AFD1C /* WinningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8AD1101B55A581001AFD1C /* WinningViewController.m */; };
 		8BCD25F31B39E49B004363DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD25F21B39E49B004363DA /* main.m */; };
 		8BCD25F61B39E49B004363DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD25F51B39E49B004363DA /* AppDelegate.m */; };
 		8BCD25FC1B39E49B004363DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCD25FA1B39E49B004363DA /* Main.storyboard */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B8AD10F1B55A581001AFD1C /* WinningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinningViewController.h; sourceTree = "<group>"; };
+		8B8AD1101B55A581001AFD1C /* WinningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinningViewController.m; sourceTree = "<group>"; };
 		8BCD25ED1B39E49B004363DA /* Jackpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jackpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCD25F11B39E49B004363DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BCD25F21B39E49B004363DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +89,8 @@
 			children = (
 				8BCD25F41B39E49B004363DA /* AppDelegate.h */,
 				8BCD25F51B39E49B004363DA /* AppDelegate.m */,
+				8B8AD10F1B55A581001AFD1C /* WinningViewController.h */,
+				8B8AD1101B55A581001AFD1C /* WinningViewController.m */,
 				8BCD26161B39EB58004363DA /* LotteryTableViewController.h */,
 				8BCD26171B39EB58004363DA /* LotteryTableViewController.m */,
 				8BCD26191B39F12C004363DA /* TicketNumber.h */,
@@ -224,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8AD1111B55A581001AFD1C /* WinningViewController.m in Sources */,
 				8BCD25F61B39E49B004363DA /* AppDelegate.m in Sources */,
 				8BCD25F31B39E49B004363DA /* main.m in Sources */,
 				8BCD261B1B39F12C004363DA /* TicketNumber.m in Sources */,
@@ -422,6 +428,7 @@
 				8BCD26121B39E49B004363DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BCD26131B39E49B004363DA /* Build configuration list for PBXNativeTarget "JackpotTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +437,7 @@
 				8BCD26151B39E49B004363DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
