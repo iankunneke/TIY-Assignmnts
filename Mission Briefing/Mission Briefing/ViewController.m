@@ -32,7 +32,7 @@
     
     [self.agentNameTextField setText: @""];
     self.greetingLabel.text = @"" ;
-    self.missionBriefingTextView.text = @"" ;
+    self.missionBriefingTextView.text = @"";
 }
 
 - (void)didReceiveMemoryWarning
