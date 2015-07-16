@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SZz-Lm-ZTw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SZz-Lm-ZTw">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -51,8 +51,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="TIYLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9pW-Fv-yl1">
-                                <rect key="frame" x="198" y="388" width="200" height="172"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TIYLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9pW-Fv-yl1">
+                                <rect key="frame" x="198" y="390" width="200" height="172"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="4N1-LB-LpH"/>
                                     <constraint firstAttribute="height" constant="172" id="GwO-g4-qka"/>
@@ -74,6 +74,7 @@
                             <constraint firstItem="8O7-tP-wex" firstAttribute="centerX" secondItem="k6s-Cc-dbR" secondAttribute="centerX" id="EF1-PE-DCJ"/>
                             <constraint firstItem="ccU-ve-nuM" firstAttribute="centerX" secondItem="k6s-Cc-dbR" secondAttribute="centerX" id="EFn-1V-s0i"/>
                             <constraint firstItem="ccU-ve-nuM" firstAttribute="top" secondItem="7cm-88-qFf" secondAttribute="bottom" constant="10" id="HzI-tg-qj0"/>
+                            <constraint firstAttribute="centerX" secondItem="9pW-Fv-yl1" secondAttribute="centerX" constant="2" id="RRO-lC-aJv"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="qZC-WU-mTE" secondAttribute="bottom" constant="20" id="VbH-ux-D8w"/>
                             <constraint firstItem="ccU-ve-nuM" firstAttribute="top" secondItem="8O7-tP-wex" secondAttribute="bottom" constant="10" id="bao-JW-XX1"/>
                             <constraint firstItem="ccU-ve-nuM" firstAttribute="centerX" secondItem="8O7-tP-wex" secondAttribute="centerX" id="fp1-JP-una"/>
