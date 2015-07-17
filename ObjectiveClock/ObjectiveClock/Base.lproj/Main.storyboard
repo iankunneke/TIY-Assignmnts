@@ -4,15 +4,15 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Clock View Controller-->
         <scene sceneID="Dum-7N-wm9">
             <objects>
-                <viewController id="Xvj-lm-M1l" sceneMemberID="viewController">
+                <viewController id="Xvj-lm-M1l" customClass="ClockViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6ux-QR-Jvf"/>
                         <viewControllerLayoutGuide type="bottom" id="BtH-gh-MxS"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="V0i-TO-RkY">
+                    <view key="view" contentMode="scaleToFill" id="V0i-TO-RkY" customClass="C">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -30,6 +30,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7ca-i1-OGn"/>
+                    <connections>
+                        <outlet property="timeLabel" destination="A55-Vh-TSa" id="y4S-ej-3Ki"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RR9-F8-JZq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

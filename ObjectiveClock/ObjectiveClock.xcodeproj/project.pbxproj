@@ -14,6 +14,7 @@
 		8B8935EB1B582BEA00DAD33A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8935E91B582BEA00DAD33A /* LaunchScreen.xib */; };
 		8B8935F71B582BEA00DAD33A /* ObjectiveClockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8935F61B582BEA00DAD33A /* ObjectiveClockTests.m */; };
 		8B8936021B582D3300DAD33A /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8936011B582D3300DAD33A /* ClockViewController.m */; };
+		8B8936051B5847BA00DAD33A /* Clock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8936041B5847BA00DAD33A /* Clock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		8B8935F61B582BEA00DAD33A /* ObjectiveClockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveClockTests.m; sourceTree = "<group>"; };
 		8B8936001B582D3300DAD33A /* ClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
 		8B8936011B582D3300DAD33A /* ClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
+		8B8936031B5847BA00DAD33A /* Clock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clock.h; sourceTree = "<group>"; };
+		8B8936041B5847BA00DAD33A /* Clock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Clock.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 			children = (
 				8B8935DE1B582BEA00DAD33A /* AppDelegate.h */,
 				8B8935DF1B582BEA00DAD33A /* AppDelegate.m */,
+				8B8936031B5847BA00DAD33A /* Clock.h */,
+				8B8936041B5847BA00DAD33A /* Clock.m */,
 				8B8936001B582D3300DAD33A /* ClockViewController.h */,
 				8B8936011B582D3300DAD33A /* ClockViewController.m */,
 				8B8935E41B582BEA00DAD33A /* Main.storyboard */,
@@ -221,6 +226,7 @@
 			files = (
 				8B8936021B582D3300DAD33A /* ClockViewController.m in Sources */,
 				8B8935E01B582BEA00DAD33A /* AppDelegate.m in Sources */,
+				8B8936051B5847BA00DAD33A /* Clock.m in Sources */,
 				8B8935DD1B582BEA00DAD33A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +422,7 @@
 				8B8935FC1B582BEA00DAD33A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B8935FD1B582BEA00DAD33A /* Build configuration list for PBXNativeTarget "ObjectiveClockTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				8B8935FF1B582BEA00DAD33A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
