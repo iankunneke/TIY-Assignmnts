@@ -13,6 +13,8 @@
 		8B8936201B592D0300DAD33A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B89361F1B592D0300DAD33A /* Images.xcassets */; };
 		8B8936231B592D0300DAD33A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8936211B592D0300DAD33A /* LaunchScreen.xib */; };
 		8B89362F1B592D0300DAD33A /* ObjectiveStopwatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B89362E1B592D0300DAD33A /* ObjectiveStopwatchTests.m */; };
+		8B89363A1B59302600DAD33A /* StopwatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8936391B59302600DAD33A /* StopwatchViewController.m */; };
+		8B89363D1B5930BA00DAD33A /* MyStopwatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B89363C1B5930BA00DAD33A /* MyStopwatch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,10 @@
 		8B8936281B592D0300DAD33A /* ObjectiveStopwatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveStopwatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B89362D1B592D0300DAD33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B89362E1B592D0300DAD33A /* ObjectiveStopwatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveStopwatchTests.m; sourceTree = "<group>"; };
+		8B8936381B59302600DAD33A /* StopwatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopwatchViewController.h; sourceTree = "<group>"; };
+		8B8936391B59302600DAD33A /* StopwatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopwatchViewController.m; sourceTree = "<group>"; };
+		8B89363B1B5930BA00DAD33A /* MyStopwatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStopwatch.h; sourceTree = "<group>"; };
+		8B89363C1B5930BA00DAD33A /* MyStopwatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStopwatch.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,10 @@
 			children = (
 				8B8936161B592D0300DAD33A /* AppDelegate.h */,
 				8B8936171B592D0300DAD33A /* AppDelegate.m */,
+				8B8936381B59302600DAD33A /* StopwatchViewController.h */,
+				8B8936391B59302600DAD33A /* StopwatchViewController.m */,
+				8B89363B1B5930BA00DAD33A /* MyStopwatch.h */,
+				8B89363C1B5930BA00DAD33A /* MyStopwatch.m */,
 				8B89361C1B592D0300DAD33A /* Main.storyboard */,
 				8B89361F1B592D0300DAD33A /* Images.xcassets */,
 				8B8936211B592D0300DAD33A /* LaunchScreen.xib */,
@@ -216,6 +226,8 @@
 			files = (
 				8B8936181B592D0300DAD33A /* AppDelegate.m in Sources */,
 				8B8936151B592D0300DAD33A /* main.m in Sources */,
+				8B89363A1B59302600DAD33A /* StopwatchViewController.m in Sources */,
+				8B89363D1B5930BA00DAD33A /* MyStopwatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

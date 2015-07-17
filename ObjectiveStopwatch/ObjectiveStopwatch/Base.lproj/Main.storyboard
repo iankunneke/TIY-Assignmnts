@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UaB-5r-wco">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Stopwatch View Controller-->
         <scene sceneID="hES-9b-M4W">
             <objects>
-                <viewController id="UaB-5r-wco" sceneMemberID="viewController">
+                <viewController id="UaB-5r-wco" customClass="StopwatchViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xEn-xR-0fG"/>
                         <viewControllerLayoutGuide type="bottom" id="Gz4-aa-K6q"/>
@@ -55,6 +55,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="currentCount" destination="8QN-8F-P2H" id="gEv-Oq-rtw"/>
+                        <outlet property="startTime" destination="nAa-uP-fhy" id="inh-Lt-C49"/>
+                        <outlet property="stopTime" destination="ZcJ-fN-YUE" id="hwm-9y-dpI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iFt-i2-saD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
