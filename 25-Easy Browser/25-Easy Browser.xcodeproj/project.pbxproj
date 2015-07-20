@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B1F3F4D1B5970F100492EEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B1F3F4B1B5970F100492EEB /* Main.storyboard */; };
+		8B1F3F531B59735D00492EEB /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1F3F521B59735D00492EEB /* BrowserViewController.swift */; };
 		8BCC6B2A1B5954C60063F3BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC6B291B5954C60063F3BA /* AppDelegate.swift */; };
-		8BCC6B2C1B5954C60063F3BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC6B2B1B5954C60063F3BA /* ViewController.swift */; };
-		8BCC6B2F1B5954C60063F3BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCC6B2D1B5954C60063F3BA /* Main.storyboard */; };
 		8BCC6B311B5954C60063F3BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCC6B301B5954C60063F3BA /* Images.xcassets */; };
 		8BCC6B341B5954C60063F3BA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BCC6B321B5954C60063F3BA /* LaunchScreen.xib */; };
 		8BCC6B401B5954C60063F3BA /* _5_Easy_BrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC6B3F1B5954C60063F3BA /* _5_Easy_BrowserTests.swift */; };
@@ -26,11 +26,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B1F3F4C1B5970F100492EEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B1F3F521B59735D00492EEB /* BrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 		8BCC6B241B5954C60063F3BA /* 25-Easy Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "25-Easy Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCC6B281B5954C60063F3BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BCC6B291B5954C60063F3BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8BCC6B2B1B5954C60063F3BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8BCC6B2E1B5954C60063F3BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BCC6B301B5954C60063F3BA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8BCC6B331B5954C60063F3BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8BCC6B391B5954C60063F3BA /* 25-Easy BrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "25-Easy BrowserTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,9 +77,9 @@
 		8BCC6B261B5954C60063F3BA /* 25-Easy Browser */ = {
 			isa = PBXGroup;
 			children = (
+				8B1F3F4B1B5970F100492EEB /* Main.storyboard */,
+				8B1F3F521B59735D00492EEB /* BrowserViewController.swift */,
 				8BCC6B291B5954C60063F3BA /* AppDelegate.swift */,
-				8BCC6B2B1B5954C60063F3BA /* ViewController.swift */,
-				8BCC6B2D1B5954C60063F3BA /* Main.storyboard */,
 				8BCC6B301B5954C60063F3BA /* Images.xcassets */,
 				8BCC6B321B5954C60063F3BA /* LaunchScreen.xib */,
 				8BCC6B271B5954C60063F3BA /* Supporting Files */,
@@ -192,7 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BCC6B2F1B5954C60063F3BA /* Main.storyboard in Resources */,
+				8B1F3F4D1B5970F100492EEB /* Main.storyboard in Resources */,
 				8BCC6B341B5954C60063F3BA /* LaunchScreen.xib in Resources */,
 				8BCC6B311B5954C60063F3BA /* Images.xcassets in Resources */,
 			);
@@ -212,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BCC6B2C1B5954C60063F3BA /* ViewController.swift in Sources */,
+				8B1F3F531B59735D00492EEB /* BrowserViewController.swift in Sources */,
 				8BCC6B2A1B5954C60063F3BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,10 +236,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8BCC6B2D1B5954C60063F3BA /* Main.storyboard */ = {
+		8B1F3F4B1B5970F100492EEB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8BCC6B2E1B5954C60063F3BA /* Base */,
+				8B1F3F4C1B5970F100492EEB /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -409,6 +409,7 @@
 				8BCC6B451B5954C60063F3BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BCC6B461B5954C60063F3BA /* Build configuration list for PBXNativeTarget "25-Easy BrowserTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +418,7 @@
 				8BCC6B481B5954C60063F3BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,4 +10,9 @@
 
 @interface MyStopwatch : NSObject
 
+-(void) start;
+-(void) stop;
+-(BOOL) isRunning;
+-(NSString *) elapsedTimeAsString;
+
 @end

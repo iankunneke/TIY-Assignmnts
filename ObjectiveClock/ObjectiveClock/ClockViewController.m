@@ -27,7 +27,7 @@
     [super viewDidLoad];
     clock = [[Clock alloc] init];
     
-    timer = [NSTimer timerWithTimeInterval:1.0 target: self selector:@selector(updateTimeLabel) userInfo:nil repeats:true];
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target: self selector:@selector(updateTimeLabel) userInfo:nil repeats:true];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateTimeLabel) name:UIApplicationWillEnterForegroundNotification object:nil];
 }
 -(void)viewWillAppear:(BOOL)animated
