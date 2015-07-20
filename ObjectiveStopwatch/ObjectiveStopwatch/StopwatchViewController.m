@@ -7,11 +7,15 @@
 //
 
 #import "StopwatchViewController.h"
+#import "MyStopwatch.h"
 
 @interface StopwatchViewController ()
 {
-NSTimer *stopwatch;
+    NSTimer *timer;
+    MyStopwatch *stopwatch;
 }
+- (IBAction)startStopwatch:(UIButton *)sender;
+- (IBAction)stopStopwatch:(UIButton *)sender;
 
 @property (nonatomic) IBOutlet UILabel *currentCount;
 @property (nonatomic) IBOutlet UIButton *startTime;
@@ -23,7 +27,9 @@ NSTimer *stopwatch;
 
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
+    stopwatch = [[MyStopwatch alloc]init];
     // Do any additional setup after loading the view.
 }
 
@@ -43,4 +49,24 @@ NSTimer *stopwatch;
 }
 */
 
+- (IBAction)startStopwatch:(UIButton *)sender
+{
+    [stopwatch start];
+    timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateElapsedTimeLabel) userInfo:nil repeats:true];
+}
+
+-(void) updateElapsedTimeLabel
+{
+    if (stopwatch.isRunning)
+    {
+        self.currentCount.text = [stopwatch elapsedTimeAsString];
+    }
+    
+    
+}
+
+- (IBAction)stopStopwatch:(UIButton *)sender
+{
+    [stopwatch stop];
+}
 @end
