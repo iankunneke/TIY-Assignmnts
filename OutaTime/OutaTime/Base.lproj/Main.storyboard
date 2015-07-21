@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jMb-lf-utW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jMb-lf-utW">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -24,8 +24,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN 01 2000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9G3-Jw-nUV">
-                                <rect key="frame" x="211" y="112" width="180" height="36.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN 01, 2000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9G3-Jw-nUV">
+                                <rect key="frame" x="207.5" y="112" width="186.5" height="36.5"/>
                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -52,12 +52,6 @@
                                 <rect key="frame" x="236" y="84" width="129" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.9963360741102063" green="0.99730758729217961" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEB 17, 2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bwr-ld-ckc">
-                                <rect key="frame" x="215" y="197" width="171" height="36.5"/>
-                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
-                                <color key="textColor" red="1" green="0.96978904868193061" blue="0.0042026352762619679" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Speed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ9-NN-dQZ">
@@ -90,6 +84,12 @@
                                     <segue destination="bBv-ya-q7Q" kind="show" identifier="ShowDestinationDatePickerSegue" id="4Tf-dj-o7i"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEB 17, 2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bwr-ld-ckc">
+                                <rect key="frame" x="215" y="196" width="171" height="36.5"/>
+                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.96978904868193061" blue="0.0042026352762619679" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.20984494686126709" green="0.2098878026008606" blue="0.20984223484992981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -98,7 +98,7 @@
                             <constraint firstItem="UO2-ce-RIw" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="2V5-Jy-unB"/>
                             <constraint firstItem="kbg-qc-Ss4" firstAttribute="top" secondItem="13C-P1-uwA" secondAttribute="bottom" constant="20" id="6Zz-jH-Nke"/>
                             <constraint firstAttribute="centerX" secondItem="pIK-0g-0IO" secondAttribute="centerX" constant="-0.5" id="7Bl-bp-GnL"/>
-                            <constraint firstAttribute="centerX" secondItem="UO2-ce-RIw" secondAttribute="centerX" constant="-0.5" id="7uR-KK-VJz"/>
+                            <constraint firstAttribute="centerX" secondItem="UO2-ce-RIw" secondAttribute="centerX" id="7uR-KK-VJz"/>
                             <constraint firstItem="jyd-us-qc7" firstAttribute="top" secondItem="ZJ9-NN-dQZ" secondAttribute="bottom" constant="8" id="8Cn-vV-zVf"/>
                             <constraint firstAttribute="centerX" secondItem="hr0-xm-ukf" secondAttribute="centerX" constant="-0.5" id="8MG-dk-Sfp"/>
                             <constraint firstItem="9G3-Jw-nUV" firstAttribute="top" secondItem="UO2-ce-RIw" secondAttribute="bottom" constant="8" id="C5k-6y-utg"/>
@@ -110,7 +110,7 @@
                             <constraint firstAttribute="centerX" secondItem="kbg-qc-Ss4" secondAttribute="centerX" id="SHb-Tg-VzP"/>
                             <constraint firstItem="hr0-xm-ukf" firstAttribute="top" secondItem="9G3-Jw-nUV" secondAttribute="bottom" constant="20" id="TIV-qF-nri"/>
                             <constraint firstAttribute="centerX" secondItem="Bwr-ld-ckc" secondAttribute="centerX" constant="-0.5" id="Vze-up-Tzn"/>
-                            <constraint firstAttribute="centerX" secondItem="9G3-Jw-nUV" secondAttribute="centerX" constant="-1" id="XcQ-ds-uS5"/>
+                            <constraint firstAttribute="centerX" secondItem="9G3-Jw-nUV" secondAttribute="centerX" id="XcQ-ds-uS5"/>
                             <constraint firstItem="Bwr-ld-ckc" firstAttribute="top" secondItem="hr0-xm-ukf" secondAttribute="bottom" constant="8" id="fRq-6X-2gj"/>
                             <constraint firstItem="pIK-0g-0IO" firstAttribute="top" secondItem="Bwr-ld-ckc" secondAttribute="bottom" constant="20" id="mmV-eF-3ep"/>
                             <constraint firstAttribute="centerX" secondItem="13C-P1-uwA" secondAttribute="centerX" constant="-0.5" id="tM4-sw-D6a"/>
@@ -119,6 +119,7 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="MTc-Xb-0Eo"/>
+                                <exclude reference="mmV-eF-3ep"/>
                             </mask>
                         </variation>
                     </view>

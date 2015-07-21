@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		8B1F3F631B5D63CB00492EEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1F3F621B5D63CB00492EEB /* AppDelegate.swift */; };
-		8B1F3F651B5D63CB00492EEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1F3F641B5D63CB00492EEB /* ViewController.swift */; };
+		8B1F3F651B5D63CB00492EEB /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1F3F641B5D63CB00492EEB /* TimeViewController.swift */; };
 		8B1F3F681B5D63CB00492EEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B1F3F661B5D63CB00492EEB /* Main.storyboard */; };
 		8B1F3F6A1B5D63CB00492EEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1F3F691B5D63CB00492EEB /* Images.xcassets */; };
 		8B1F3F6D1B5D63CB00492EEB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B1F3F6B1B5D63CB00492EEB /* LaunchScreen.xib */; };
 		8B1F3F791B5D63CB00492EEB /* _6_OutaSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1F3F781B5D63CB00492EEB /* _6_OutaSwiftTests.swift */; };
+		8B1F3F831B5D6AE900492EEB /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B1F3F821B5D654700492EEB /* digital-7.ttf */; };
+		8B1F3F871B5D6F1800492EEB /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1F3F861B5D6F1800492EEB /* DatePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		8B1F3F5D1B5D63CB00492EEB /* 26 OutaSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "26 OutaSwift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1F3F611B5D63CB00492EEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B1F3F621B5D63CB00492EEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B1F3F641B5D63CB00492EEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B1F3F641B5D63CB00492EEB /* TimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
 		8B1F3F671B5D63CB00492EEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B1F3F691B5D63CB00492EEB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8B1F3F6C1B5D63CB00492EEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8B1F3F721B5D63CB00492EEB /* 26 OutaSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "26 OutaSwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1F3F771B5D63CB00492EEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B1F3F781B5D63CB00492EEB /* _6_OutaSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _6_OutaSwiftTests.swift; sourceTree = "<group>"; };
+		8B1F3F821B5D654700492EEB /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
+		8B1F3F861B5D6F1800492EEB /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +82,11 @@
 			isa = PBXGroup;
 			children = (
 				8B1F3F621B5D63CB00492EEB /* AppDelegate.swift */,
-				8B1F3F641B5D63CB00492EEB /* ViewController.swift */,
+				8B1F3F641B5D63CB00492EEB /* TimeViewController.swift */,
+				8B1F3F861B5D6F1800492EEB /* DatePickerViewController.swift */,
 				8B1F3F661B5D63CB00492EEB /* Main.storyboard */,
 				8B1F3F691B5D63CB00492EEB /* Images.xcassets */,
+				8B1F3F821B5D654700492EEB /* digital-7.ttf */,
 				8B1F3F6B1B5D63CB00492EEB /* LaunchScreen.xib */,
 				8B1F3F601B5D63CB00492EEB /* Supporting Files */,
 			);
@@ -195,6 +201,7 @@
 				8B1F3F681B5D63CB00492EEB /* Main.storyboard in Resources */,
 				8B1F3F6D1B5D63CB00492EEB /* LaunchScreen.xib in Resources */,
 				8B1F3F6A1B5D63CB00492EEB /* Images.xcassets in Resources */,
+				8B1F3F831B5D6AE900492EEB /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B1F3F651B5D63CB00492EEB /* ViewController.swift in Sources */,
+				8B1F3F651B5D63CB00492EEB /* TimeViewController.swift in Sources */,
 				8B1F3F631B5D63CB00492EEB /* AppDelegate.swift in Sources */,
+				8B1F3F871B5D6F1800492EEB /* DatePickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +417,7 @@
 				8B1F3F7E1B5D63CB00492EEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B1F3F7F1B5D63CB00492EEB /* Build configuration list for PBXNativeTarget "26 OutaSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +426,7 @@
 				8B1F3F811B5D63CB00492EEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
