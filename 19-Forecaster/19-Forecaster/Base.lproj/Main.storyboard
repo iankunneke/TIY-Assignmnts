@@ -128,7 +128,7 @@
                     <navigationItem key="navigationItem" id="yTQ-ET-FaM">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="p6M-I4-f54">
                             <connections>
-                                <segue destination="4Vd-xf-atm" kind="show" id="VK6-aP-zrW"/>
+                                <segue destination="4Vd-xf-atm" kind="presentation" id="VK6-aP-zrW"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

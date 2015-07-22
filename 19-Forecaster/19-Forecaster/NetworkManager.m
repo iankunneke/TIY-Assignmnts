@@ -68,6 +68,13 @@ static NSString *forecastIOBaseURL = @"https://api.forecast.io/forecast/1ef384b7
     NSURLSessionDataTask *dataTask = [session dataTaskWithURL: url];
     [self startDataTask:dataTask forCity:theCityData];
 }
+- (void) fetchCurrentWeatherForCity: (CityData *) theCityData;
+{
+    NSString *forecastIOURLString = [NSString stringWithFormat: forecastIOBaseURL, theCityData.latitude, theCityData.longitude];
+    NSURL *url = [NSURL URLWithString: forecastIOURLString];
+    NSURLSessionDataTask *dataTask = [session dataTaskWithURL: url];
+    [self startDataTask:dataTask forCity:theCityData];
+}
 
 - (void) startDataTask: (NSURLSessionDataTask *) dataTask forCity: (CityData *) theCityData
 {
@@ -105,19 +112,27 @@ static NSString *forecastIOBaseURL = @"https://api.forecast.io/forecast/1ef384b7
         {
             fetchType = DataFetchTypeWeather;
         }
-        BOOL success;
+        BOOL coordinateSuccess, weatherSuccess;
         switch (fetchType)
         {
             case DataFetchTypeCoordinates:
-                success = [aCity parseCoordinateInfo:aDict];
+                coordinateSuccess = [aCity parseCoordinateInfo:aDict];
+                break;
+                
+            case DataFetchTypeWeather:
+                weatherSuccess = [aCity.currentWeather parseWeatherInfo:aDict];
                 break;
                 
             default:
                 break;
         }
-        if (success)
+        if (coordinateSuccess)
         {
             [self.delegate cityWasFound:aCity];
+        }
+        if (weatherSuccess)
+        {
+            [self.delegate weatherWasFoundForCity:aCity];
         }
     }
 }

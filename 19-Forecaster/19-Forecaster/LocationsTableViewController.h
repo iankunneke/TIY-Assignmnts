@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CityData.h"
 
-@interface LocationsTableViewController : UITableViewController
+@protocol LocationsTableViewControllerDelegate
+
+-(void) cityWasFound: (CityData *) aCity;
+-(void) weatherWasFoundForCity: (CityData *) city;
+
+@end
+
+@interface LocationsTableViewController : UITableViewController <LocationsTableViewControllerDelegate>
 
 @end

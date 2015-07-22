@@ -7,6 +7,8 @@
 //
 
 #import "SearchViewController.h"
+#import "CityData.h"
+#import "NetworkManager.h"
 
 @interface SearchViewController ()
 
@@ -44,6 +46,12 @@
 
 - (IBAction)findCity:(UIButton *)sender
 {
+    if (![self.zipText.text isEqualToString: @""])
+    {
+        CityData *thatCity = [[CityData alloc] init];
+        thatCity.zip = self.zipText.text;
+        [[NetworkManager sharedNetworkManager] findCoordinatesForCity:thatCity];
+    }
 }
 
 - (IBAction)useCurrentLocation:(UIButton *)sender
