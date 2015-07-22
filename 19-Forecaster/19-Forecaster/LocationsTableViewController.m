@@ -8,6 +8,7 @@
 
 #import "LocationsTableViewController.h"
 #import "PlacesCell.h"
+#import "NetworkManager.h"
 
 @interface LocationsTableViewController ()
 {
@@ -19,32 +20,31 @@
 
 @implementation LocationsTableViewController
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     self.title = @"Forecaster";
     
-    
+    [NetworkManager sharedNetworkManager].delegate = self;
     
     places = [[NSMutableArray alloc] init];
-    [places addObject:
-                    @{
-                      @"temperature": @94.09,
-                      @"temperatureMin": @74.86,
-                      @"temperatureMax": @94.7,
-                      @"apparentTemperature": @100.09,
-                      @"humidity": @0.71,
-                      @"summary": @"Partly Cloudy",
-                      @"icon": @"partly-cloudy-day",
-                      @"precipProbability": @0.84,
-                      @"sunriseTime": @1436697431,
-                      @"sunsetTime": @1436747205,
-                      @"city": @"Orlando",
-                      @"state": @"Florida",
-                      @"date": @"July 10, 2015"
-                      }];
+//    [places addObject:
+//                    @{
+//                      @"temperature": @94.09,
+//                      @"temperatureMin": @74.86,
+//                      @"temperatureMax": @94.7,
+//                      @"apparentTemperature": @100.09,
+//                      @"humidity": @0.71,
+//                      @"summary": @"Partly Cloudy",
+//                      @"icon": @"partly-cloudy-day",
+//                      @"precipProbability": @0.84,
+//                      @"sunriseTime": @1436697431,
+//                      @"sunsetTime": @1436747205,
+//                      @"city": @"Orlando",
+//                      @"state": @"Florida",
+//                      @"date": @"July 10, 2015"
+//                      }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -73,12 +73,16 @@
 {
     PlacesCell *cell = [tableView dequeueReusableCellWithIdentifier:@"myCityCell" forIndexPath:indexPath];
   
-    NSDictionary *aPlace = [places objectAtIndex:indexPath.row];
+    CityData *aPlace = [places objectAtIndex:indexPath.row];
     
-    cell.locationsCity.text = [aPlace objectForKey:@"city"];
-    cell.locationsState.text = [aPlace objectForKey:@"state"];
-    cell.locationsConditionImage.image = [aPlace objectForKey:@"icon"];
-    cell.locationsTemp.text = [aPlace objectForKey:@"temperature"];
+    cell.locationsCity.text = aPlace.theCity;
+    cell.locationsState.text = aPlace.theState;
+    if (aPlace.currentWeather)
+    {
+        cell.locationsConditionImage.image = [UIImage imageNamed:aPlace.currentWeather.icon];
+        cell.locationsTemp.text = [NSString stringWithFormat:@"%.f℉",aPlace.currentWeather.temperature];
+    }
+    
     
     return cell;
 }
@@ -126,5 +130,26 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - LocationTableViewDelegate
+
+-(void) cityWasFound: (CityData *) aCity
+{
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    [places addObject:aCity];
+    aCity.currentWeather = [[WeatherConditions alloc] init];
+    [[NetworkManager sharedNetworkManager] fetchCurrentWeatherForCity:aCity];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[places indexOfObject:aCity] inSection:0];
+    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+-(void) weatherWasFoundForCity: (CityData *) city
+{
+    NSIndexPath *indexPathForCell = [NSIndexPath indexPathForRow:[places indexOfObject:city] inSection:0];
+    PlacesCell *cellToUpdate = (PlacesCell *)[self.tableView cellForRowAtIndexPath:indexPathForCell];
+    cellToUpdate.locationsConditionImage.image = [UIImage imageNamed:city.currentWeather.icon];
+    cellToUpdate.locationsTemp.text = [NSString stringWithFormat:@"%.f℉",city.currentWeather.temperature];
+}
+
+
 
 @end

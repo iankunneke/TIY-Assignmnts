@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		8BCC7E141B5ED44B00EEF760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC7E131B5ED44B00EEF760 /* AppDelegate.swift */; };
-		8BCC7E161B5ED44B00EEF760 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC7E151B5ED44B00EEF760 /* ViewController.swift */; };
 		8BCC7E191B5ED44B00EEF760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCC7E171B5ED44B00EEF760 /* Main.storyboard */; };
 		8BCC7E1B1B5ED44B00EEF760 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCC7E1A1B5ED44B00EEF760 /* Images.xcassets */; };
 		8BCC7E1E1B5ED44B00EEF760 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BCC7E1C1B5ED44B00EEF760 /* LaunchScreen.xib */; };
 		8BCC7E2A1B5ED44B00EEF760 /* SwiftTeamsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC7E291B5ED44B00EEF760 /* SwiftTeamsTests.swift */; };
+		8BCC7E341B5ED59F00EEF760 /* SportsTeamsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC7E331B5ED59F00EEF760 /* SportsTeamsTableViewController.swift */; };
+		8BCC7E361B5EE00300EEF760 /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC7E351B5EE00300EEF760 /* Teams.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		8BCC7E0E1B5ED44B00EEF760 /* SwiftTeams.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTeams.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCC7E121B5ED44B00EEF760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BCC7E131B5ED44B00EEF760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8BCC7E151B5ED44B00EEF760 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8BCC7E181B5ED44B00EEF760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BCC7E1A1B5ED44B00EEF760 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8BCC7E1D1B5ED44B00EEF760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8BCC7E231B5ED44B00EEF760 /* SwiftTeamsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTeamsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCC7E281B5ED44B00EEF760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BCC7E291B5ED44B00EEF760 /* SwiftTeamsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTeamsTests.swift; sourceTree = "<group>"; };
+		8BCC7E331B5ED59F00EEF760 /* SportsTeamsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsTeamsTableViewController.swift; sourceTree = "<group>"; };
+		8BCC7E351B5EE00300EEF760 /* Teams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				8BCC7E131B5ED44B00EEF760 /* AppDelegate.swift */,
-				8BCC7E151B5ED44B00EEF760 /* ViewController.swift */,
 				8BCC7E171B5ED44B00EEF760 /* Main.storyboard */,
+				8BCC7E331B5ED59F00EEF760 /* SportsTeamsTableViewController.swift */,
+				8BCC7E351B5EE00300EEF760 /* Teams.swift */,
 				8BCC7E1A1B5ED44B00EEF760 /* Images.xcassets */,
 				8BCC7E1C1B5ED44B00EEF760 /* LaunchScreen.xib */,
 				8BCC7E111B5ED44B00EEF760 /* Supporting Files */,
@@ -212,8 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BCC7E161B5ED44B00EEF760 /* ViewController.swift in Sources */,
+				8BCC7E361B5EE00300EEF760 /* Teams.swift in Sources */,
 				8BCC7E141B5ED44B00EEF760 /* AppDelegate.swift in Sources */,
+				8BCC7E341B5ED59F00EEF760 /* SportsTeamsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +413,7 @@
 				8BCC7E2F1B5ED44B00EEF760 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BCC7E301B5ED44B00EEF760 /* Build configuration list for PBXNativeTarget "SwiftTeamsTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				8BCC7E321B5ED44B00EEF760 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

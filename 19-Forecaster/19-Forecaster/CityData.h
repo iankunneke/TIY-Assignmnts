@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WeatherConditions.h"
 
 @interface CityData : NSObject
 
+@property (nonatomic) WeatherConditions *currentWeather;
 @property (nonatomic) NSString *theCity;
 @property (nonatomic) NSString *theState;
 @property (assign) double longitude;

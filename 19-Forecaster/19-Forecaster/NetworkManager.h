@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LocationsTableViewController.h"
 
 @interface NetworkManager : NSObject
+
+@property (nonatomic) id<LocationsTableViewControllerDelegate> delegate;
+
++ (NetworkManager *) sharedNetworkManager;
+- (void) findCoordinatesForCity:(CityData *) theCityData;
+- (void) fetchCurrentWeatherForCity: (CityData *) theCityData;
 
 @end

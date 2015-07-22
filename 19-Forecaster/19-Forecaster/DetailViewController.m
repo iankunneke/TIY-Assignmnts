@@ -8,6 +8,7 @@
 
 #import "DetailViewController.h"
 
+
 @interface DetailViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *highTemp;
