@@ -1,25 +1,157 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="p8g-GA-kor">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Validate Yourself-->
+        <scene sceneID="F83-ur-IgK">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kTi-8V-EAw" customClass="FormViewController" customModule="_8_SwiftForm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="NN4-lr-dMZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZLJ-Cp-zdg"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="PY1-17-pC7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w6j-wu-Cyy">
+                                <rect key="frame" x="21" y="196" width="450" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="kTi-8V-EAw" id="FVl-sx-4P9"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kLa-Xv-Nrs">
+                                <rect key="frame" x="21" y="246" width="180" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="kTi-8V-EAw" id="cmm-jA-IHR"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ni6-lg-GBU">
+                                <rect key="frame" x="21" y="296" width="450" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="kTi-8V-EAw" id="wWy-rL-JjO"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Street Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5A3-S0-HzS">
+                                <rect key="frame" x="21" y="146" width="450" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="kTi-8V-EAw" id="f42-7c-4ke"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First &amp; Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bJ2-OX-9pg">
+                                <rect key="frame" x="21" y="96" width="450" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="kTi-8V-EAw" id="5tO-na-r26"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KW1-80-mjf">
+                                <rect key="frame" x="209" y="246" width="261" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="kTi-8V-EAw" id="WzZ-RZ-vjS"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bJ2-OX-9pg" firstAttribute="leading" secondItem="PY1-17-pC7" secondAttribute="leading" id="1Sj-NT-BDt"/>
+                            <constraint firstItem="bJ2-OX-9pg" firstAttribute="top" secondItem="NN4-lr-dMZ" secondAttribute="bottom" constant="20" id="2wf-bf-9dq"/>
+                            <constraint firstItem="bJ2-OX-9pg" firstAttribute="leading" secondItem="PY1-17-pC7" secondAttribute="leadingMargin" constant="5" id="7P4-zp-PIO"/>
+                            <constraint firstItem="bJ2-OX-9pg" firstAttribute="leading" secondItem="PY1-17-pC7" secondAttribute="leadingMargin" id="9iI-aL-16B"/>
+                            <constraint firstItem="w6j-wu-Cyy" firstAttribute="top" secondItem="5A3-S0-HzS" secondAttribute="bottom" constant="10" id="AVQ-qX-Lh0"/>
+                            <constraint firstItem="5A3-S0-HzS" firstAttribute="top" secondItem="bJ2-OX-9pg" secondAttribute="bottom" constant="20" id="Bcp-NH-Zcw"/>
+                            <constraint firstItem="kLa-Xv-Nrs" firstAttribute="leading" secondItem="PY1-17-pC7" secondAttribute="leadingMargin" constant="5" id="BgT-9T-QzK"/>
+                            <constraint firstItem="bJ2-OX-9pg" firstAttribute="centerX" secondItem="5A3-S0-HzS" secondAttribute="centerX" constant="-0.5" id="E7h-ew-Tsf"/>
+                            <constraint firstItem="w6j-wu-Cyy" firstAttribute="top" secondItem="5A3-S0-HzS" secondAttribute="bottom" constant="20" id="FwH-6H-fo7"/>
+                            <constraint firstItem="5A3-S0-HzS" firstAttribute="top" secondItem="bJ2-OX-9pg" secondAttribute="bottom" constant="10" id="GaR-v4-io4"/>
+                            <constraint firstItem="w6j-wu-Cyy" firstAttribute="leading" secondItem="PY1-17-pC7" secondAttribute="leadingMargin" constant="5" id="IkH-FP-q6t"/>
+                            <constraint firstItem="Ni6-lg-GBU" firstAttribute="width" secondItem="w6j-wu-Cyy" secondAttribute="width" id="JBf-j6-ES6"/>
+                            <constraint firstItem="bJ2-OX-9pg" firstAttribute="width" secondItem="PY1-17-pC7" secondAttribute="width" multiplier="0.75" id="Kz1-gn-KBP"/>
+                            <constraint firstItem="w6j-wu-Cyy" firstAttribute="width" secondItem="5A3-S0-HzS" secondAttribute="width" id="OtT-1S-Um8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bJ2-OX-9pg" secondAttribute="trailing" multiplier="0.5" id="TQV-ak-FO1"/>
+                            <constraint firstItem="KW1-80-mjf" firstAttribute="width" secondItem="kLa-Xv-Nrs" secondAttribute="width" multiplier="1.45" id="VX2-n9-8YO"/>
+                            <constraint firstItem="bJ2-OX-9pg" firstAttribute="top" secondItem="NN4-lr-dMZ" secondAttribute="bottom" constant="32" id="YLU-yG-zwS"/>
+                            <constraint firstItem="Ni6-lg-GBU" firstAttribute="top" secondItem="kLa-Xv-Nrs" secondAttribute="bottom" constant="20" id="YrL-wJ-V7S"/>
+                            <constraint firstItem="w6j-wu-Cyy" firstAttribute="centerX" secondItem="5A3-S0-HzS" secondAttribute="centerX" constant="5" id="b5H-N2-EBw"/>
+                            <constraint firstAttribute="trailing" secondItem="bJ2-OX-9pg" secondAttribute="trailing" constant="420" id="bTP-Xa-Vbu"/>
+                            <constraint firstItem="5A3-S0-HzS" firstAttribute="leading" secondItem="PY1-17-pC7" secondAttribute="leadingMargin" constant="5" id="byJ-vU-lYK"/>
+                            <constraint firstItem="bJ2-OX-9pg" firstAttribute="top" secondItem="NN4-lr-dMZ" secondAttribute="bottom" constant="20" id="cAU-rB-WBz"/>
+                            <constraint firstItem="KW1-80-mjf" firstAttribute="width" secondItem="w6j-wu-Cyy" secondAttribute="width" multiplier="0.6" id="eyt-zM-mVx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bJ2-OX-9pg" secondAttribute="trailing" multiplier="0.5" id="gfb-wz-sBH"/>
+                            <constraint firstItem="kLa-Xv-Nrs" firstAttribute="top" secondItem="w6j-wu-Cyy" secondAttribute="bottom" constant="20" id="hug-UG-H6M"/>
+                            <constraint firstItem="bJ2-OX-9pg" firstAttribute="width" secondItem="5A3-S0-HzS" secondAttribute="width" id="kdh-hL-cfZ"/>
+                            <constraint firstItem="w6j-wu-Cyy" firstAttribute="width" secondItem="kLa-Xv-Nrs" secondAttribute="width" multiplier="2.5" id="m8M-eO-Ztv"/>
+                            <constraint firstAttribute="centerX" secondItem="bJ2-OX-9pg" secondAttribute="centerX" id="nbW-ER-DYo"/>
+                            <constraint firstItem="bJ2-OX-9pg" firstAttribute="leading" secondItem="PY1-17-pC7" secondAttribute="leading" constant="5" id="oG7-Wo-3Ni"/>
+                            <constraint firstItem="KW1-80-mjf" firstAttribute="centerY" secondItem="kLa-Xv-Nrs" secondAttribute="centerY" id="uSb-sh-Ntr"/>
+                            <constraint firstItem="Ni6-lg-GBU" firstAttribute="leading" secondItem="PY1-17-pC7" secondAttribute="leadingMargin" constant="5" id="uTD-KX-wiq"/>
+                            <constraint firstItem="KW1-80-mjf" firstAttribute="leading" secondItem="kLa-Xv-Nrs" secondAttribute="trailing" constant="5" id="ykb-fC-Thq"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1Sj-NT-BDt"/>
+                                <exclude reference="2wf-bf-9dq"/>
+                                <exclude reference="9iI-aL-16B"/>
+                                <exclude reference="E7h-ew-Tsf"/>
+                                <exclude reference="TQV-ak-FO1"/>
+                                <exclude reference="bTP-Xa-Vbu"/>
+                                <exclude reference="cAU-rB-WBz"/>
+                                <exclude reference="gfb-wz-sBH"/>
+                                <exclude reference="nbW-ER-DYo"/>
+                                <exclude reference="oG7-Wo-3Ni"/>
+                                <exclude reference="GaR-v4-io4"/>
+                                <exclude reference="AVQ-qX-Lh0"/>
+                                <exclude reference="b5H-N2-EBw"/>
+                                <exclude reference="eyt-zM-mVx"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Validate Yourself" id="MNH-ZR-S89"/>
+                    <connections>
+                        <outlet property="cityText" destination="w6j-wu-Cyy" id="c1P-aM-IX6"/>
+                        <outlet property="nameTextField" destination="bJ2-OX-9pg" id="K32-W9-fTK"/>
+                        <outlet property="phoneText" destination="Ni6-lg-GBU" id="g3l-cg-f5n"/>
+                        <outlet property="stateText" destination="kLa-Xv-Nrs" id="4HC-dH-hL8"/>
+                        <outlet property="streetAddressText" destination="5A3-S0-HzS" id="8kW-5j-eep"/>
+                        <outlet property="zipText" destination="KW1-80-mjf" id="EPm-Vt-zjB"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qKE-gc-olx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1063" y="229"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rOc-dN-z5l">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p8g-GA-kor" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Fm-Jx-2cH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kTi-8V-EAw" kind="relationship" relationship="rootViewController" id="c0p-BH-UKs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4fh-PF-BgQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="251" y="229"/>
         </scene>
     </scenes>
 </document>
