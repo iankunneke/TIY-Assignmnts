@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BAB02C21B62A1F80041F7B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAB02C11B62A1F80041F7B9 /* main.m */; };
+		8BAB02C51B62A1F80041F7B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAB02C41B62A1F80041F7B9 /* AppDelegate.m */; };
+		8BAB02CB1B62A1F80041F7B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BAB02C91B62A1F80041F7B9 /* Main.storyboard */; };
+		8BAB02CD1B62A1F80041F7B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BAB02CC1B62A1F80041F7B9 /* Images.xcassets */; };
+		8BAB02D01B62A1F80041F7B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BAB02CE1B62A1F80041F7B9 /* LaunchScreen.xib */; };
+		8BAB02DC1B62A1F80041F7B9 /* HighVoltageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAB02DB1B62A1F80041F7B9 /* HighVoltageTests.m */; };
+		8BC8937D1B62BDB900BE9643 /* VoltageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC8937C1B62BDB900BE9643 /* VoltageTableViewController.m */; };
+		8BC893801B62DAB700BE9643 /* AddDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC8937F1B62DAB700BE9643 /* AddDataTableViewController.m */; };
+		8BC893831B665DBF00BE9643 /* Calculations.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC893821B665DBF00BE9643 /* Calculations.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BAB02D61B62A1F80041F7B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BAB02B41B62A1F80041F7B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BAB02BB1B62A1F80041F7B9;
+			remoteInfo = HighVoltage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8BAB02BC1B62A1F80041F7B9 /* HighVoltage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HighVoltage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BAB02C01B62A1F80041F7B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BAB02C11B62A1F80041F7B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8BAB02C31B62A1F80041F7B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8BAB02C41B62A1F80041F7B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8BAB02CA1B62A1F80041F7B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BAB02CC1B62A1F80041F7B9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8BAB02CF1B62A1F80041F7B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8BAB02D51B62A1F80041F7B9 /* HighVoltageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HighVoltageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BAB02DA1B62A1F80041F7B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BAB02DB1B62A1F80041F7B9 /* HighVoltageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HighVoltageTests.m; sourceTree = "<group>"; };
+		8BC8937B1B62BDB900BE9643 /* VoltageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoltageTableViewController.h; sourceTree = "<group>"; };
+		8BC8937C1B62BDB900BE9643 /* VoltageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoltageTableViewController.m; sourceTree = "<group>"; };
+		8BC8937E1B62DAB700BE9643 /* AddDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDataTableViewController.h; sourceTree = "<group>"; };
+		8BC8937F1B62DAB700BE9643 /* AddDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDataTableViewController.m; sourceTree = "<group>"; };
+		8BC893811B665DBF00BE9643 /* Calculations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculations.h; sourceTree = "<group>"; };
+		8BC893821B665DBF00BE9643 /* Calculations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculations.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BAB02B91B62A1F80041F7B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BAB02D21B62A1F80041F7B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BAB02B31B62A1F80041F7B9 = {
+			isa = PBXGroup;
+			children = (
+				8BAB02BE1B62A1F80041F7B9 /* HighVoltage */,
+				8BAB02D81B62A1F80041F7B9 /* HighVoltageTests */,
+				8BAB02BD1B62A1F80041F7B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BAB02BD1B62A1F80041F7B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BAB02BC1B62A1F80041F7B9 /* HighVoltage.app */,
+				8BAB02D51B62A1F80041F7B9 /* HighVoltageTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BAB02BE1B62A1F80041F7B9 /* HighVoltage */ = {
+			isa = PBXGroup;
+			children = (
+				8BAB02C31B62A1F80041F7B9 /* AppDelegate.h */,
+				8BAB02C41B62A1F80041F7B9 /* AppDelegate.m */,
+				8BAB02C91B62A1F80041F7B9 /* Main.storyboard */,
+				8BC8937B1B62BDB900BE9643 /* VoltageTableViewController.h */,
+				8BC8937C1B62BDB900BE9643 /* VoltageTableViewController.m */,
+				8BC8937E1B62DAB700BE9643 /* AddDataTableViewController.h */,
+				8BC8937F1B62DAB700BE9643 /* AddDataTableViewController.m */,
+				8BC893811B665DBF00BE9643 /* Calculations.h */,
+				8BC893821B665DBF00BE9643 /* Calculations.m */,
+				8BAB02CC1B62A1F80041F7B9 /* Images.xcassets */,
+				8BAB02CE1B62A1F80041F7B9 /* LaunchScreen.xib */,
+				8BAB02BF1B62A1F80041F7B9 /* Supporting Files */,
+			);
+			path = HighVoltage;
+			sourceTree = "<group>";
+		};
+		8BAB02BF1B62A1F80041F7B9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BAB02C01B62A1F80041F7B9 /* Info.plist */,
+				8BAB02C11B62A1F80041F7B9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BAB02D81B62A1F80041F7B9 /* HighVoltageTests */ = {
+			isa = PBXGroup;
+			children = (
+				8BAB02DB1B62A1F80041F7B9 /* HighVoltageTests.m */,
+				8BAB02D91B62A1F80041F7B9 /* Supporting Files */,
+			);
+			path = HighVoltageTests;
+			sourceTree = "<group>";
+		};
+		8BAB02D91B62A1F80041F7B9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BAB02DA1B62A1F80041F7B9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BAB02BB1B62A1F80041F7B9 /* HighVoltage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BAB02DF1B62A1F80041F7B9 /* Build configuration list for PBXNativeTarget "HighVoltage" */;
+			buildPhases = (
+				8BAB02B81B62A1F80041F7B9 /* Sources */,
+				8BAB02B91B62A1F80041F7B9 /* Frameworks */,
+				8BAB02BA1B62A1F80041F7B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HighVoltage;
+			productName = HighVoltage;
+			productReference = 8BAB02BC1B62A1F80041F7B9 /* HighVoltage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BAB02D41B62A1F80041F7B9 /* HighVoltageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BAB02E21B62A1F80041F7B9 /* Build configuration list for PBXNativeTarget "HighVoltageTests" */;
+			buildPhases = (
+				8BAB02D11B62A1F80041F7B9 /* Sources */,
+				8BAB02D21B62A1F80041F7B9 /* Frameworks */,
+				8BAB02D31B62A1F80041F7B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BAB02D71B62A1F80041F7B9 /* PBXTargetDependency */,
+			);
+			name = HighVoltageTests;
+			productName = HighVoltageTests;
+			productReference = 8BAB02D51B62A1F80041F7B9 /* HighVoltageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BAB02B41B62A1F80041F7B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "The Iron Yard";
+				TargetAttributes = {
+					8BAB02BB1B62A1F80041F7B9 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					8BAB02D41B62A1F80041F7B9 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 8BAB02BB1B62A1F80041F7B9;
+					};
+				};
+			};
+			buildConfigurationList = 8BAB02B71B62A1F80041F7B9 /* Build configuration list for PBXProject "HighVoltage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BAB02B31B62A1F80041F7B9;
+			productRefGroup = 8BAB02BD1B62A1F80041F7B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BAB02BB1B62A1F80041F7B9 /* HighVoltage */,
+				8BAB02D41B62A1F80041F7B9 /* HighVoltageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BAB02BA1B62A1F80041F7B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BAB02CB1B62A1F80041F7B9 /* Main.storyboard in Resources */,
+				8BAB02D01B62A1F80041F7B9 /* LaunchScreen.xib in Resources */,
+				8BAB02CD1B62A1F80041F7B9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BAB02D31B62A1F80041F7B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BAB02B81B62A1F80041F7B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BC8937D1B62BDB900BE9643 /* VoltageTableViewController.m in Sources */,
+				8BC893801B62DAB700BE9643 /* AddDataTableViewController.m in Sources */,
+				8BAB02C51B62A1F80041F7B9 /* AppDelegate.m in Sources */,
+				8BC893831B665DBF00BE9643 /* Calculations.m in Sources */,
+				8BAB02C21B62A1F80041F7B9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BAB02D11B62A1F80041F7B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BAB02DC1B62A1F80041F7B9 /* HighVoltageTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BAB02D71B62A1F80041F7B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BAB02BB1B62A1F80041F7B9 /* HighVoltage */;
+			targetProxy = 8BAB02D61B62A1F80041F7B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8BAB02C91B62A1F80041F7B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BAB02CA1B62A1F80041F7B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8BAB02CE1B62A1F80041F7B9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BAB02CF1B62A1F80041F7B9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BAB02DD1B62A1F80041F7B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8BAB02DE1B62A1F80041F7B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BAB02E01B62A1F80041F7B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HighVoltage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8BAB02E11B62A1F80041F7B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HighVoltage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8BAB02E31B62A1F80041F7B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HighVoltageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HighVoltage.app/HighVoltage";
+			};
+			name = Debug;
+		};
+		8BAB02E41B62A1F80041F7B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HighVoltageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HighVoltage.app/HighVoltage";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BAB02B71B62A1F80041F7B9 /* Build configuration list for PBXProject "HighVoltage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BAB02DD1B62A1F80041F7B9 /* Debug */,
+				8BAB02DE1B62A1F80041F7B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BAB02DF1B62A1F80041F7B9 /* Build configuration list for PBXNativeTarget "HighVoltage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BAB02E01B62A1F80041F7B9 /* Debug */,
+				8BAB02E11B62A1F80041F7B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BAB02E21B62A1F80041F7B9 /* Build configuration list for PBXNativeTarget "HighVoltageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BAB02E31B62A1F80041F7B9 /* Debug */,
+				8BAB02E41B62A1F80041F7B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BAB02B41B62A1F80041F7B9 /* Project object */;
+}
