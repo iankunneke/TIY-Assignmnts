@@ -16,6 +16,7 @@
 		8BCF23531B7512A2000B41B1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BCF23511B7512A2000B41B1 /* LaunchScreen.xib */; };
 		8BCF235F1B7512A2000B41B1 /* Make_Something_BeautifulTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF235E1B7512A2000B41B1 /* Make_Something_BeautifulTests.swift */; };
 		8BCF23691B764156000B41B1 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF23681B764156000B41B1 /* Score.swift */; };
+		8BCF239D1B78CDE7000B41B1 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF239C1B78CDE7000B41B1 /* GameOverScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		8BCF235D1B7512A2000B41B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BCF235E1B7512A2000B41B1 /* Make_Something_BeautifulTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Make_Something_BeautifulTests.swift; sourceTree = "<group>"; };
 		8BCF23681B764156000B41B1 /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		8BCF239C1B78CDE7000B41B1 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				8BCF23481B7512A2000B41B1 /* GameScene.swift */,
 				8BCF234A1B7512A2000B41B1 /* GameViewController.swift */,
 				8BCF23681B764156000B41B1 /* Score.swift */,
+				8BCF239C1B78CDE7000B41B1 /* GameOverScene.swift */,
 				8BCF234C1B7512A2000B41B1 /* Main.storyboard */,
 				8BCF234F1B7512A2000B41B1 /* Images.xcassets */,
 				8BCF23511B7512A2000B41B1 /* LaunchScreen.xib */,
@@ -222,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BCF239D1B78CDE7000B41B1 /* GameOverScene.swift in Sources */,
 				8BCF23491B7512A2000B41B1 /* GameScene.swift in Sources */,
 				8BCF234B1B7512A2000B41B1 /* GameViewController.swift in Sources */,
 				8BCF23691B764156000B41B1 /* Score.swift in Sources */,
