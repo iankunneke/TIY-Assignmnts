@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hwj-W5-K9a">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Now Playing View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="NowPlayingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOW PLAYING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1F-pg-fTv">
+                                <rect key="frame" x="253" y="72" width="93.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Np-1x-fw3">
+                                <rect key="frame" x="263" y="97" width="73" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJw-uA-0Oy">
+                                <rect key="frame" x="280" y="125" width="40.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLq-4x-YEQ">
+                                <rect key="frame" x="285" y="185" width="30" height="30"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Lhg-pn-iE5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtP-ni-QDu">
+                                <rect key="frame" x="275" y="223" width="50" height="30"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1wU-P5-rh2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TJw-uA-0Oy" firstAttribute="centerX" secondItem="1Np-1x-fw3" secondAttribute="centerX" id="Dwf-lE-yAN"/>
+                            <constraint firstItem="dtP-ni-QDu" firstAttribute="centerX" secondItem="OLq-4x-YEQ" secondAttribute="centerX" id="F7V-xJ-LLN"/>
+                            <constraint firstAttribute="centerX" secondItem="p1F-pg-fTv" secondAttribute="centerX" id="Jr1-hJ-tgw"/>
+                            <constraint firstItem="1Np-1x-fw3" firstAttribute="top" secondItem="p1F-pg-fTv" secondAttribute="bottom" constant="8" id="Pzh-yw-Efe"/>
+                            <constraint firstItem="p1F-pg-fTv" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="WwU-MR-e5K"/>
+                            <constraint firstItem="OLq-4x-YEQ" firstAttribute="top" secondItem="TJw-uA-0Oy" secondAttribute="bottom" constant="40" id="ZJf-XI-c6n"/>
+                            <constraint firstItem="TJw-uA-0Oy" firstAttribute="top" secondItem="1Np-1x-fw3" secondAttribute="bottom" constant="8" id="eOK-cb-vIv"/>
+                            <constraint firstItem="TJw-uA-0Oy" firstAttribute="centerX" secondItem="OLq-4x-YEQ" secondAttribute="centerX" id="fRZ-SQ-bpq"/>
+                            <constraint firstItem="p1F-pg-fTv" firstAttribute="centerX" secondItem="1Np-1x-fw3" secondAttribute="centerX" id="kYN-N2-9HC"/>
+                            <constraint firstItem="dtP-ni-QDu" firstAttribute="top" secondItem="OLq-4x-YEQ" secondAttribute="bottom" constant="8" id="zPP-ER-qpK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FR1-g7-EGi"/>
+                    <connections>
+                        <outlet property="artistLabel" destination="TJw-uA-0Oy" id="Sz2-8R-EpR"/>
+                        <outlet property="playButton" destination="OLq-4x-YEQ" id="l2P-Z4-Ae0"/>
+                        <outlet property="songTitleLabel" destination="1Np-1x-fw3" id="VDO-pO-dNa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1122" y="-385"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yER-2Z-n18">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hwj-W5-K9a" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="j1o-tK-izi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="gZE-Uv-lTH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YmP-Cw-Jeq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="363" y="-385"/>
+        </scene>
+    </scenes>
+</document>
