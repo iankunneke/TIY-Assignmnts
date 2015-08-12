@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hs9-s5-zla">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Sports Teams Table View Controller-->
@@ -33,11 +34,65 @@
                             <outlet property="delegate" destination="L0B-i6-O8f" id="e51-YW-aES"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="O8d-T8-R7T"/>
+                    <navigationItem key="navigationItem" id="O8d-T8-R7T">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="u9Q-Ov-fCl">
+                            <connections>
+                                <segue destination="SaT-vj-bUk" kind="presentation" id="OPT-Jp-BFS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ng-D5-4XU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1206" y="296"/>
+        </scene>
+        <!--New Team View Controller-->
+        <scene sceneID="HDP-HK-Zlf">
+            <objects>
+                <viewController id="gZI-mZ-mZ1" customClass="NewTeamViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tak-cO-aFq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Crm-h2-icg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xAO-WU-Aw4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cMZ-Av-FpY">
+                                <rect key="frame" x="60" y="72" width="480" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="gZI-mZ-mZ1" id="6GQ-gp-Hh9"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="cMZ-Av-FpY" secondAttribute="centerX" id="80b-Zz-lz8"/>
+                            <constraint firstItem="cMZ-Av-FpY" firstAttribute="width" secondItem="xAO-WU-Aw4" secondAttribute="width" multiplier="0.8" id="p1s-Zz-lOd"/>
+                            <constraint firstItem="cMZ-Av-FpY" firstAttribute="top" secondItem="tak-cO-aFq" secondAttribute="bottom" constant="8" id="y4u-wa-Zbd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2KG-PG-Wdd">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="AYn-ia-HmA">
+                            <connections>
+                                <action selector="cancelSelection:" destination="gZI-mZ-mZ1" id="UzN-pc-1iy"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="tPo-TZ-zKf">
+                            <connections>
+                                <action selector="doneSelectingTeam:" destination="gZI-mZ-mZ1" id="hwZ-YH-fwN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="teamTextField" destination="cMZ-Av-FpY" id="gW5-Iq-CqZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9OA-2d-iFO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2689" y="296"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pCw-h3-kgD">
@@ -56,6 +111,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4pS-bT-ynE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="394" y="296"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fG2-hU-5zC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SaT-vj-bUk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Sd-0f-3Fq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gZI-mZ-mZ1" kind="relationship" relationship="rootViewController" id="dqJ-EA-cIQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OO7-lf-kP9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1877" y="296"/>
         </scene>
     </scenes>
 </document>
