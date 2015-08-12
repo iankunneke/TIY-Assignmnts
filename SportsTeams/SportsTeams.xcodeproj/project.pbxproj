@@ -15,6 +15,8 @@
 		8BCDC0911B44680B00EBAC05 /* SportsTeamsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCDC0901B44680B00EBAC05 /* SportsTeamsTests.m */; };
 		8BCDC09C1B44688A00EBAC05 /* SportsTeamsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCDC09B1B44688A00EBAC05 /* SportsTeamsTableViewController.m */; };
 		8BCDC09F1B44696500EBAC05 /* Teams.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCDC09E1B44696500EBAC05 /* Teams.m */; };
+		8BCF23A61B7A808C000B41B1 /* NewTeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF23A51B7A808C000B41B1 /* NewTeamViewController.m */; };
+		A76AABA8DC92A63A35B537FB /* libPods-SportsTeams.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ABE883DD1CF147FDDF87C71 /* libPods-SportsTeams.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0754D5E8E00AFB8FC3902281 /* Pods-SportsTeams.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsTeams.release.xcconfig"; path = "Pods/Target Support Files/Pods-SportsTeams/Pods-SportsTeams.release.xcconfig"; sourceTree = "<group>"; };
+		3ABE883DD1CF147FDDF87C71 /* libPods-SportsTeams.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SportsTeams.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCDC0711B44680B00EBAC05 /* SportsTeams.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsTeams.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCDC0751B44680B00EBAC05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BCDC0761B44680B00EBAC05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,6 +47,9 @@
 		8BCDC09B1B44688A00EBAC05 /* SportsTeamsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SportsTeamsTableViewController.m; sourceTree = "<group>"; };
 		8BCDC09D1B44696500EBAC05 /* Teams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teams.h; sourceTree = "<group>"; };
 		8BCDC09E1B44696500EBAC05 /* Teams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teams.m; sourceTree = "<group>"; };
+		8BCF23A41B7A808C000B41B1 /* NewTeamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTeamViewController.h; sourceTree = "<group>"; };
+		8BCF23A51B7A808C000B41B1 /* NewTeamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTeamViewController.m; sourceTree = "<group>"; };
+		C53E448733D9DC559D249FAD /* Pods-SportsTeams.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsTeams.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SportsTeams/Pods-SportsTeams.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76AABA8DC92A63A35B537FB /* libPods-SportsTeams.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,12 +71,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A356309F1A47303BC7ECA3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3ABE883DD1CF147FDDF87C71 /* libPods-SportsTeams.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8BCDC0681B44680B00EBAC05 = {
 			isa = PBXGroup;
 			children = (
 				8BCDC0731B44680B00EBAC05 /* SportsTeams */,
 				8BCDC08D1B44680B00EBAC05 /* SportsTeamsTests */,
 				8BCDC0721B44680B00EBAC05 /* Products */,
+				A3306E234A684C67CED8FCFF /* Pods */,
+				1A356309F1A47303BC7ECA3B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +109,8 @@
 				8BCDC09B1B44688A00EBAC05 /* SportsTeamsTableViewController.m */,
 				8BCDC09D1B44696500EBAC05 /* Teams.h */,
 				8BCDC09E1B44696500EBAC05 /* Teams.m */,
+				8BCF23A41B7A808C000B41B1 /* NewTeamViewController.h */,
+				8BCF23A51B7A808C000B41B1 /* NewTeamViewController.m */,
 				8BCDC0811B44680B00EBAC05 /* Images.xcassets */,
 				8BCDC0831B44680B00EBAC05 /* LaunchScreen.xib */,
 				8BCDC0741B44680B00EBAC05 /* Supporting Files */,
@@ -124,6 +144,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A3306E234A684C67CED8FCFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C53E448733D9DC559D249FAD /* Pods-SportsTeams.debug.xcconfig */,
+				0754D5E8E00AFB8FC3902281 /* Pods-SportsTeams.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BCDC0941B44680B00EBAC05 /* Build configuration list for PBXNativeTarget "SportsTeams" */;
 			buildPhases = (
+				4B6ECDA276BC042F96B098EC /* Check Pods Manifest.lock */,
 				8BCDC06D1B44680B00EBAC05 /* Sources */,
 				8BCDC06E1B44680B00EBAC05 /* Frameworks */,
 				8BCDC06F1B44680B00EBAC05 /* Resources */,
+				CA84074892EAC355F63D9EE9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,12 +250,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B6ECDA276BC042F96B098EC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CA84074892EAC355F63D9EE9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SportsTeams/Pods-SportsTeams-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8BCDC06D1B44680B00EBAC05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8BCDC09F1B44696500EBAC05 /* Teams.m in Sources */,
+				8BCF23A61B7A808C000B41B1 /* NewTeamViewController.m in Sources */,
 				8BCDC09C1B44688A00EBAC05 /* SportsTeamsTableViewController.m in Sources */,
 				8BCDC07A1B44680B00EBAC05 /* AppDelegate.m in Sources */,
 				8BCDC0771B44680B00EBAC05 /* main.m in Sources */,
@@ -351,6 +416,7 @@
 		};
 		8BCDC0951B44680B00EBAC05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C53E448733D9DC559D249FAD /* Pods-SportsTeams.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SportsTeams/Info.plist;
@@ -361,6 +427,7 @@
 		};
 		8BCDC0961B44680B00EBAC05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0754D5E8E00AFB8FC3902281 /* Pods-SportsTeams.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SportsTeams/Info.plist;
@@ -422,6 +489,7 @@
 				8BCDC0961B44680B00EBAC05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BCDC0971B44680B00EBAC05 /* Build configuration list for PBXNativeTarget "SportsTeamsTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +498,7 @@
 				8BCDC0991B44680B00EBAC05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
