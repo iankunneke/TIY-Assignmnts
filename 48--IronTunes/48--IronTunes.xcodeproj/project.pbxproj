@@ -15,6 +15,10 @@
 		8BCF23D01B7B7C4B000B41B1 /* _8__IronTunesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF23CF1B7B7C4B000B41B1 /* _8__IronTunesTests.m */; };
 		8BCF23DB1B7B7F06000B41B1 /* NowPlayingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF23DA1B7B7F06000B41B1 /* NowPlayingViewController.m */; };
 		8BCF23DD1B7B8802000B41B1 /* CannedHeat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BCF23DC1B7B8802000B41B1 /* CannedHeat.mp3 */; };
+		8BCF23DF1B7BB66B000B41B1 /* BackgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BCF23DE1B7BB66B000B41B1 /* BackgroundMusic.mp3 */; };
+		8BCF23E31B7BBD8D000B41B1 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF23E21B7BBD8D000B41B1 /* Song.m */; };
+		8BCF23E51B7BBFE2000B41B1 /* Napoleon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8BCF23E41B7BBFE2000B41B1 /* Napoleon.jpg */; };
+		8BCF23E71B7BC10F000B41B1 /* Turd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8BCF23E61B7BC10F000B41B1 /* Turd.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,11 @@
 		8BCF23D91B7B7F06000B41B1 /* NowPlayingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NowPlayingViewController.h; sourceTree = "<group>"; };
 		8BCF23DA1B7B7F06000B41B1 /* NowPlayingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NowPlayingViewController.m; sourceTree = "<group>"; };
 		8BCF23DC1B7B8802000B41B1 /* CannedHeat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CannedHeat.mp3; sourceTree = "<group>"; };
+		8BCF23DE1B7BB66B000B41B1 /* BackgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BackgroundMusic.mp3; sourceTree = "<group>"; };
+		8BCF23E11B7BBD8D000B41B1 /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
+		8BCF23E21B7BBD8D000B41B1 /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
+		8BCF23E41B7BBFE2000B41B1 /* Napoleon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Napoleon.jpg; sourceTree = "<group>"; };
+		8BCF23E61B7BC10F000B41B1 /* Turd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Turd.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +97,12 @@
 				8BCF23BD1B7B7C4B000B41B1 /* Main.storyboard */,
 				8BCF23D91B7B7F06000B41B1 /* NowPlayingViewController.h */,
 				8BCF23DA1B7B7F06000B41B1 /* NowPlayingViewController.m */,
+				8BCF23E11B7BBD8D000B41B1 /* Song.h */,
+				8BCF23E21B7BBD8D000B41B1 /* Song.m */,
 				8BCF23DC1B7B8802000B41B1 /* CannedHeat.mp3 */,
+				8BCF23DE1B7BB66B000B41B1 /* BackgroundMusic.mp3 */,
+				8BCF23E41B7BBFE2000B41B1 /* Napoleon.jpg */,
+				8BCF23E61B7BC10F000B41B1 /* Turd.jpg */,
 				8BCF23C01B7B7C4B000B41B1 /* Images.xcassets */,
 				8BCF23C21B7B7C4B000B41B1 /* LaunchScreen.xib */,
 				8BCF23B31B7B7C4B000B41B1 /* Supporting Files */,
@@ -204,8 +218,11 @@
 			files = (
 				8BCF23BF1B7B7C4B000B41B1 /* Main.storyboard in Resources */,
 				8BCF23C41B7B7C4B000B41B1 /* LaunchScreen.xib in Resources */,
+				8BCF23DF1B7BB66B000B41B1 /* BackgroundMusic.mp3 in Resources */,
+				8BCF23E71B7BC10F000B41B1 /* Turd.jpg in Resources */,
 				8BCF23C11B7B7C4B000B41B1 /* Images.xcassets in Resources */,
 				8BCF23DD1B7B8802000B41B1 /* CannedHeat.mp3 in Resources */,
+				8BCF23E51B7BBFE2000B41B1 /* Napoleon.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BCF23E31B7BBD8D000B41B1 /* Song.m in Sources */,
 				8BCF23DB1B7B7F06000B41B1 /* NowPlayingViewController.m in Sources */,
 				8BCF23B91B7B7C4B000B41B1 /* AppDelegate.m in Sources */,
 				8BCF23B61B7B7C4B000B41B1 /* main.m in Sources */,
@@ -420,6 +438,7 @@
 				8BCF23D51B7B7C4B000B41B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BCF23D61B7B7C4B000B41B1 /* Build configuration list for PBXNativeTarget "48--IronTunesTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +447,7 @@
 				8BCF23D81B7B7C4B000B41B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

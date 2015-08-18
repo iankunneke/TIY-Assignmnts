@@ -7,11 +7,15 @@
 //
 
 #import "NowPlayingViewController.h"
+#import "Song.h"
 
 @import AVFoundation;
 @import MediaPlayer;
 
 @interface NowPlayingViewController ()
+{
+    NSMutableArray *songs;
+}
 
 @property (weak, nonatomic) IBOutlet UILabel *songTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *artistLabel;
@@ -19,6 +23,8 @@
 
 @property (nonatomic) AVQueuePlayer *avQueuePlayer;
 
+- (IBAction)backButton:(UIButton *)sender;
+- (IBAction)forwardButton:(UIButton *)sender;
 - (IBAction)playTapped:(UIButton *)sender;
 - (IBAction)restartTapped:(UIButton *)sender;
 
@@ -29,16 +35,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    songs = [[NSMutableArray alloc] init];
+    [self prepareSongs];
     [self setupAudioSession];
-    
     self.avQueuePlayer = [[AVQueuePlayer alloc] init];
-    AVPlayerItem *playerItem = [AVPlayerItem playerItemWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"CannedHeat" ofType:@"mp3"]]];
-    if (playerItem)
+    for (Song *aSong in songs)
     {
-        [self.avQueuePlayer insertItem:playerItem afterItem:nil];
-        [MPNowPlayingInfoCenter defaultCenter].nowPlayingInfo = @{MPMediaItemPropertyTitle: @"Canned Heat", MPMediaItemPropertyArtist: @"Jamiroguai"};
-        self.artistLabel.text = @"Jamiroquai";
-        self.songTitleLabel.text = @"Canned Heat";
+    
+        AVPlayerItem *playerItem = [AVPlayerItem playerItemWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:aSong.fileName ofType:@"mp3"]]];
+        if (playerItem)
+        {
+            [self.avQueuePlayer insertItem:playerItem afterItem:nil];
+            [MPNowPlayingInfoCenter defaultCenter].nowPlayingInfo = @{MPMediaItemPropertyTitle: aSong.songName, MPMediaItemPropertyArtist: aSong.artist};
+        }
     }
 }
 
@@ -87,6 +96,23 @@
     {
         [self togglePlayback:YES];
     }
+}
+
+
+
+- (IBAction)forwardButton:(UIButton *)sender
+{
+    [self.avQueuePlayer advanceToNextItem];
+    
+    AVPlayerItem *currentItem = self.avQueuePlayer.currentItem;
+    NSUInteger index = [self.avQueuePlayer.items indexOfObject:currentItem];
+    Song *aSong = songs[index];
+    self.artistLabel.text = aSong.artist;
+    self.songTitleLabel.text = aSong.songName;
+}
+- (IBAction)backButton:(UIButton *)sender
+{
+    
 }
 
 #pragma mark - Remote control events
@@ -146,6 +172,8 @@
 
 - (void)togglePlayback:(BOOL)play
 {
+    
+    
     if (play)
     {
         [self.avQueuePlayer play];
@@ -156,11 +184,33 @@
         [self.avQueuePlayer pause];
         [self.playButton setTitle:@"Play" forState:UIControlStateNormal];
     }
+    AVPlayerItem *currentItem = self.avQueuePlayer.currentItem;
+    NSUInteger index = [self.avQueuePlayer.items indexOfObject:currentItem];
+    Song *aSong = songs[index];
+    self.artistLabel.text = aSong.artist;
+    self.songTitleLabel.text = aSong.songName;
 }
 
 - (BOOL)canBecomeFirstResponder
 {
     return YES;
+}
+
+-(void)prepareSongs
+{
+    Song *aSong = [[Song alloc] init];
+    aSong.songName = @"Canned Heat";
+    aSong.artist = @"Jamiroquai";
+    aSong.fileName = @"CannedHeat";
+    aSong.artwork = @"Napoleon";
+    [songs addObject:aSong];
+    
+    Song *anotherSong = [[Song alloc] init];
+    anotherSong.songName = @"Background Music";
+    anotherSong.artist = @"Stewie";
+    anotherSong.fileName = @"BackgroundMusic";
+    anotherSong.artwork = @"Turd";
+    [songs addObject:anotherSong];
 }
 
 @end

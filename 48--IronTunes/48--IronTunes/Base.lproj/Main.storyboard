@@ -52,17 +52,39 @@
                                     <action selector="restartTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1wU-P5-rh2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSb-DB-Erj">
+                                <rect key="frame" x="214" y="185" width="31" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="&lt;&lt;--">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yYJ-3D-5Z5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYM-HJ-4iB">
+                                <rect key="frame" x="355" y="185" width="31" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="--&gt;&gt;"/>
+                                <connections>
+                                    <action selector="forwardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jR9-N7-Sow"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="TJw-uA-0Oy" firstAttribute="centerX" secondItem="1Np-1x-fw3" secondAttribute="centerX" id="Dwf-lE-yAN"/>
                             <constraint firstItem="dtP-ni-QDu" firstAttribute="centerX" secondItem="OLq-4x-YEQ" secondAttribute="centerX" id="F7V-xJ-LLN"/>
+                            <constraint firstItem="rYM-HJ-4iB" firstAttribute="centerY" secondItem="OLq-4x-YEQ" secondAttribute="centerY" id="GBz-KH-vzu"/>
                             <constraint firstAttribute="centerX" secondItem="p1F-pg-fTv" secondAttribute="centerX" id="Jr1-hJ-tgw"/>
                             <constraint firstItem="1Np-1x-fw3" firstAttribute="top" secondItem="p1F-pg-fTv" secondAttribute="bottom" constant="8" id="Pzh-yw-Efe"/>
                             <constraint firstItem="p1F-pg-fTv" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="WwU-MR-e5K"/>
+                            <constraint firstItem="OLq-4x-YEQ" firstAttribute="centerY" secondItem="zSb-DB-Erj" secondAttribute="centerY" id="X1U-Yd-NVJ"/>
                             <constraint firstItem="OLq-4x-YEQ" firstAttribute="top" secondItem="TJw-uA-0Oy" secondAttribute="bottom" constant="40" id="ZJf-XI-c6n"/>
+                            <constraint firstItem="rYM-HJ-4iB" firstAttribute="leading" secondItem="OLq-4x-YEQ" secondAttribute="trailing" constant="40" id="atX-Mx-GeN"/>
                             <constraint firstItem="TJw-uA-0Oy" firstAttribute="top" secondItem="1Np-1x-fw3" secondAttribute="bottom" constant="8" id="eOK-cb-vIv"/>
                             <constraint firstItem="TJw-uA-0Oy" firstAttribute="centerX" secondItem="OLq-4x-YEQ" secondAttribute="centerX" id="fRZ-SQ-bpq"/>
+                            <constraint firstItem="OLq-4x-YEQ" firstAttribute="leading" secondItem="zSb-DB-Erj" secondAttribute="trailing" constant="40" id="jhj-AM-uRW"/>
                             <constraint firstItem="p1F-pg-fTv" firstAttribute="centerX" secondItem="1Np-1x-fw3" secondAttribute="centerX" id="kYN-N2-9HC"/>
                             <constraint firstItem="dtP-ni-QDu" firstAttribute="top" secondItem="OLq-4x-YEQ" secondAttribute="bottom" constant="8" id="zPP-ER-qpK"/>
                         </constraints>
