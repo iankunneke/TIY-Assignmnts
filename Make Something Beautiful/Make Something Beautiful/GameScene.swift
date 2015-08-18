@@ -153,6 +153,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     {
         let randomCatchIndex = Int(arc4random_uniform(UInt32(catches.count)))
         let catch = SKSpriteNode(imageNamed: catches[randomCatchIndex])
+        //catch.name = catches[randomCatchIndex]
         let actualX = random(min: catch.size.width/2, max: size.width - catch.size.width/2)
 //        println("random x for shape: \(actualX)")
         
