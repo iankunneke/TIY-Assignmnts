@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		8B6F19FC1B84D63000D2CF79 /* GameStartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6F19FB1B84D63000D2CF79 /* GameStartScene.swift */; };
 		8B6F19FE1B8510D600D2CF79 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6F19FD1B8510D600D2CF79 /* GameOverScene.swift */; };
+		8BCB04561B974B2600133217 /* kabobinContact.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BCB04511B974B2600133217 /* kabobinContact.mp3 */; };
+		8BCB04571B974B2600133217 /* kabobinFill.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BCB04521B974B2600133217 /* kabobinFill.mp3 */; };
+		8BCB04581B974B2600133217 /* kabobinGameOn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BCB04531B974B2600133217 /* kabobinGameOn.mp3 */; };
+		8BCB04591B974B2600133217 /* kabobinLoseGame.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BCB04541B974B2600133217 /* kabobinLoseGame.mp3 */; };
+		8BCB045A1B974B2600133217 /* kabobinTheme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BCB04551B974B2600133217 /* kabobinTheme.mp3 */; };
 		8BD3AE131B83890F00EF1382 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3AE121B83890F00EF1382 /* AppDelegate.swift */; };
 		8BD3AE151B83890F00EF1382 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8BD3AE141B83890F00EF1382 /* GameScene.sks */; };
 		8BD3AE171B83890F00EF1382 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3AE161B83890F00EF1382 /* GameScene.swift */; };
@@ -17,7 +22,6 @@
 		8BD3AE1E1B83890F00EF1382 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BD3AE1D1B83890F00EF1382 /* Images.xcassets */; };
 		8BD3AE211B83890F00EF1382 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BD3AE1F1B83890F00EF1382 /* LaunchScreen.xib */; };
 		8BD3AE2D1B83890F00EF1382 /* KabobinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3AE2C1B83890F00EF1382 /* KabobinTests.swift */; };
-		8BD3AE371B838A9A00EF1382 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3AE361B838A9A00EF1382 /* Score.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,11 @@
 /* Begin PBXFileReference section */
 		8B6F19FB1B84D63000D2CF79 /* GameStartScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStartScene.swift; sourceTree = "<group>"; };
 		8B6F19FD1B8510D600D2CF79 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		8BCB04511B974B2600133217 /* kabobinContact.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kabobinContact.mp3; sourceTree = "<group>"; };
+		8BCB04521B974B2600133217 /* kabobinFill.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kabobinFill.mp3; sourceTree = "<group>"; };
+		8BCB04531B974B2600133217 /* kabobinGameOn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kabobinGameOn.mp3; sourceTree = "<group>"; };
+		8BCB04541B974B2600133217 /* kabobinLoseGame.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kabobinLoseGame.mp3; sourceTree = "<group>"; };
+		8BCB04551B974B2600133217 /* kabobinTheme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kabobinTheme.mp3; sourceTree = "<group>"; };
 		8BD3AE0D1B83890F00EF1382 /* Kabobin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kabobin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD3AE111B83890F00EF1382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BD3AE121B83890F00EF1382 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +54,6 @@
 		8BD3AE261B83890F00EF1382 /* KabobinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KabobinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD3AE2B1B83890F00EF1382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BD3AE2C1B83890F00EF1382 /* KabobinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KabobinTests.swift; sourceTree = "<group>"; };
-		8BD3AE361B838A9A00EF1382 /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8BCB045C1B974B3F00133217 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				8BCB04511B974B2600133217 /* kabobinContact.mp3 */,
+				8BCB04521B974B2600133217 /* kabobinFill.mp3 */,
+				8BCB04531B974B2600133217 /* kabobinGameOn.mp3 */,
+				8BCB04541B974B2600133217 /* kabobinLoseGame.mp3 */,
+				8BCB04551B974B2600133217 /* kabobinTheme.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
 		8BD3AE041B83890F00EF1382 = {
 			isa = PBXGroup;
 			children = (
@@ -93,7 +113,7 @@
 				8BD3AE181B83890F00EF1382 /* GameViewController.swift */,
 				8B6F19FB1B84D63000D2CF79 /* GameStartScene.swift */,
 				8B6F19FD1B8510D600D2CF79 /* GameOverScene.swift */,
-				8BD3AE361B838A9A00EF1382 /* Score.swift */,
+				8BCB045C1B974B3F00133217 /* Sounds */,
 				8BD3AE1A1B83890F00EF1382 /* Main.storyboard */,
 				8BD3AE1D1B83890F00EF1382 /* Images.xcassets */,
 				8BD3AE1F1B83890F00EF1382 /* LaunchScreen.xib */,
@@ -207,10 +227,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BCB04561B974B2600133217 /* kabobinContact.mp3 in Resources */,
 				8BD3AE211B83890F00EF1382 /* LaunchScreen.xib in Resources */,
+				8BCB045A1B974B2600133217 /* kabobinTheme.mp3 in Resources */,
 				8BD3AE1E1B83890F00EF1382 /* Images.xcassets in Resources */,
 				8BD3AE151B83890F00EF1382 /* GameScene.sks in Resources */,
+				8BCB04591B974B2600133217 /* kabobinLoseGame.mp3 in Resources */,
+				8BCB04571B974B2600133217 /* kabobinFill.mp3 in Resources */,
 				8BD3AE1C1B83890F00EF1382 /* Main.storyboard in Resources */,
+				8BCB04581B974B2600133217 /* kabobinGameOn.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +256,6 @@
 				8B6F19FC1B84D63000D2CF79 /* GameStartScene.swift in Sources */,
 				8BD3AE171B83890F00EF1382 /* GameScene.swift in Sources */,
 				8BD3AE191B83890F00EF1382 /* GameViewController.swift in Sources */,
-				8BD3AE371B838A9A00EF1382 /* Score.swift in Sources */,
 				8B6F19FE1B8510D600D2CF79 /* GameOverScene.swift in Sources */,
 				8BD3AE131B83890F00EF1382 /* AppDelegate.swift in Sources */,
 			);

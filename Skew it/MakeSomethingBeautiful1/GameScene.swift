@@ -16,6 +16,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     let kSkewerCategory: UInt32 = 0x1 << 1
     let kSceneEdgeCategory: UInt32 = 0x1 << 2
     
+    let food = ["Steak", "Chicken", "Shrimp", "Mushroom", "Jalepeno", "Rotten"]
     var foodCaught = 0
     
     var gameEnding: Bool = false
@@ -25,11 +26,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     var isFingerOnSkewer = false
     
     var scoreKeeper = Score()
+    let gameScore = Score()
+    var scoreLabel = UILabel(frame: CGRectMake(0, 0, 100, 60))
     
     let skewer = SKSpriteNode(imageNamed: "Skewer")
+    let background = SKSpriteNode(imageNamed: "Background")
+    
     
     override func didMoveToView(view: SKView)
     {
-        
+        self.view?.backgroundColor = UIColor(patternImage: UIImage(named: "Background")!)
     }
 }
